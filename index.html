@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viens</title>
+    <link rel="shortcut icon" type="image/svg" href="images/viens.svg"/>
+    <!-- bootstrapp-rtl -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="css/font_bootstrap-icons.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <!-- reteYo -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- owl carousel link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <!-- animate link -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AR Style -->
+    <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
+    <!-- bootstrap-ltr -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  </head>
+
+  <body>
+    <!-- ======= nav ======= -->
+    <!-- note
+      * if url == index
+        add to nav class -> "bais-nav"
+        else 
+        remove class
+     -->
+    <nav class="nav-bar navbar bais-nav navbar-expand-lg navbar-light py-2 bg-navbar" >
+        <div class="container">
+            <div class="d-flex align-items-center wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+              </button>
+              <a class="navbar-brand m-0" href="index.html"><img src="images/viens.svg" alt=""></a>
+            </div>
+            
+            <div class="nav-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 wow animate__backInDown">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a href="aboutUs.html" class="nav-link">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a href="books.html" class="nav-link">الجامعات</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="publish.html">الوكلاء</a>
+                </li>
+                <li class="nav-item">
+                  <a href="jobs.html" class="nav-link">الوظائف</a>
+                </li>
+                <li class="nav-item">
+                  <a href="profile.html" class="nav-link">الملف الشخصي</a>
+                </li>
+                <li class="nav-item">
+                  <a href="authors.html" class="nav-link">طلب الانضمام كشريك</a>
+                </li>
+              </ul> 
+            </div>
+
+            <ul class="option text-dark wow animate__backInLeft" style="flex-direction: row !important;" data-wow-duration="2s" data-wow-delay=".5s">
+              <!-- note start
+                * view only on index
+                * used to mute sound of vedio
+              -->
+              <li>
+                <button class="option-link">
+                  <i class="bi bi-volume-up"></i>
+                </button>
+              </li>
+              <!-- end note -->
+              <!-- if auth -->
+              <li id="notif" class="has-menu auth">
+                <a role="button" class="option-link">
+                  <i class="bi bi-bell"></i>
+                </a>
+                <div class="sub-menu">
+                  <div class="notifi">
+                    <a class="link" href="notifi.html"></a>
+                    <div class="notifi-img">
+                      <img src="images/viens.svg" alt="">
+                    </div>
+                    <p class="cut-text">
+                      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                    </p>
+                    <p class="date mb-0">22/01/2022</p>
+                  </div>
+                  <div class="notifi">
+                    <a class="link" href="notifi.html"></a>
+                    <div class="notifi-img">
+                      <img src="images/viens.svg" alt="">
+                    </div>
+                    <p class="cut-text">
+                      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                    </p>
+                    <p class="date mb-0">22/01/2022</p>
+                  </div>
+                </div>
+                <span class="count">1</span>
+              </li>
+              <li class="">
+                <a href="profile.html" class="option-link">
+                  <i class="bi bi-person"></i>
+                </a>
+              </li>
+              <!-- else -->
+              <li>
+                <a href="login.html" class="option-link">
+                  <i class="bi bi-box-arrow-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="option-link">
+                  <span>English</span>
+                  <i class="fa-solid fa-globe"></i>
+                </a>
+              </li>
+              <li>
+                <a href="tel:0137897687" class="option-link">
+                  <i class="bi bi-telephone-outbound"></i>
+                </a>
+              </li>
+              <li>
+                <button class="option-link">
+                  <i class="bi bi-brightness-alt-high-fill"></i>
+                </button>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ======= header ======= -->
+    <header>
+      <div class="header-wrapper">
+        <img class="ani ani-1" src="images//Topology-1.svg" alt="">
+        <img class="ani ani-2" src="images/Path 2568.svg" alt="">
+        <div class="header-contant">
+          <div class="container">
+            <a href="">
+              <div class="box blue">
+                <div class="box-img">
+                  <img src="images/box.png" alt="">
+                </div>
+                <h2>البرامج التعليمية</h2>
+              </div>
+            </a>
+            <div class="box blue">
+              <div class="box-img">
+                <img src="images/box.png" alt="">
+              </div>
+              <h2>الوظائف المتاحة</h2>
+            </div>
+          </div>
+        </div>
+        <div class="header-video wow animate__fadeInLeft">
+          <img src="images/header-shape.svg" alt="" class="header-shape">
+          <div class="video-wrap">
+            <img src="images/cover.jpg" alt="" class="video-cover-img" class="w-100">
+            <video class="video" width="100%" height="100%">
+              <source src="images/vid.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="play-icon">
+            <!-- <i class="bi bi-play-fill"></i> -->
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <div class="pause-icon d-none">
+            <!-- <i class="bi bi-pause-fill"></i> -->
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <div class="box-wrapper">
+            <div class="box">
+              <div class="box-img">
+                <img src="images/box.png" alt="">
+              </div>
+              <h2>البرامج التعليمية</h2>
+            </div>
+            <div class="box blue">
+              <div class="box-img">
+                <img src="images/box.png" alt="">
+              </div>
+              <h2>البرامج التعليمية</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bootstrap script-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- fancyBox script -->
+    <script src="ls/jquery.fancybox.min.js"></script>
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+    <!-- nice_select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- rateYo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+    <!-- custom script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
