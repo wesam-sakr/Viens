@@ -254,6 +254,30 @@ $(".show-pass").click(function () {
   $('.author-cover').height(authWidth)
   })
 
+    // make auth-img circle 
+    var shapeWidth = $('.header-shape').width();
+    var shapeHeight = $('.header-shape').height()
+    $('.play-icon').css({
+      right: shapeWidth,
+      top : shapeHeight/2
+    })
+    $('.pause-icon').css({
+      right: shapeWidth,
+      top : shapeHeight/2
+    })
+    // -- responsive --
+    $(window).resize(function(){
+      var shapeWidth = $('.header-shape').width();
+      $('.play-icon').css({
+        right: shapeWidth,
+        top : shapeHeight/2
+      })
+      $('.pause-icon').css({
+        right: shapeWidth,
+        top : shapeHeight/2
+      })
+    })
+
   if ($(".profile").length > 0) {
     const imgDiv = document.querySelector('.profile-pic');
     const img = document.querySelector('#photo');
