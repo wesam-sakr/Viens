@@ -3730,7 +3730,9 @@ body.nav-open{
   position: absolute;
   top: 0;
   right: 0;
-  height: calc(100% + 2px);
+  height: 100% ;
+  object-fit: fill;
+  object-position: center;
   z-index: 7;
   width: -webkit-fit-content;
   width: -moz-fit-content;
