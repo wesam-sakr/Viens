@@ -3705,7 +3705,7 @@ body.nav-open{
   width: 80% !important;
   height: 100%;
   position: relative;
-  clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+  /* clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%); */
 }
 
 .header-wrapper .header-video video {
@@ -3726,7 +3726,7 @@ body.nav-open{
   z-index: 9;
 }
 
-/* .header-wrapper .header-video img.header-shape {
+.header-wrapper .header-video img.header-shape {
   position: absolute;
   top: 0;
   right: 0;
@@ -3735,7 +3735,7 @@ body.nav-open{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-} */
+}
 
 .header-wrapper .header-video .video-cover-img {
   position: absolute;
