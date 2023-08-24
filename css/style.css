@@ -4806,6 +4806,7 @@ body.nav-open{
 @media (max-width: 991.8px) {
   .nav-breadcrumb {
     padding-top: 8.5rem;
+    margin-bottom: 40px;
   }
   .nav-breadcrumb svg{
     bottom: -70px !important;
@@ -4817,6 +4818,9 @@ body.nav-open{
   .nav-breadcrumb .ani-2 {
     bottom: 60px;
     left: -80px;
+  }
+  .profile .profile-data {
+    padding-right: 0rem;
   }
 }
 
