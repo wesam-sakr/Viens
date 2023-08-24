@@ -5178,8 +5178,7 @@ footer ul .social a {
 @media (max-width: 991.8px) {
   .header-wrapper .header-contant {
     width: 80%;
-    padding: 9rem 1rem;
-    padding-bottom: 3rem;
+    padding: 3rem 1rem;
     color: #4E4E4E;
     display: flex;
     flex-wrap: wrap;
@@ -5190,7 +5189,7 @@ footer ul .social a {
     width: auto ;
   }
   .header-wrapper{
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
   }
   .header-wrapper .header-video {
@@ -5201,6 +5200,10 @@ footer ul .social a {
     left: 1.2rem;
     flex-direction: column;
     grid-area: 0;
+  }
+  .header-video .box-wrapper .box{
+    padding: 2rem 0;
+    margin: 0
   }
   /* .header-wrapper .header-video {
     display: none;
