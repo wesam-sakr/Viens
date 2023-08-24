@@ -5123,6 +5123,9 @@ footer ul .social a {
   .header-wrapper .box {
     margin: 1rem auto;
   }
+  .login{
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -5177,5 +5180,8 @@ footer ul .social a {
   }
   .lang span{
     display: none;
+  }
+  .receipt td {
+    display: inline-block;
   }
 }
