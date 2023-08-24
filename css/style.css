@@ -3595,8 +3595,8 @@ body.nav-open{
 }
 
 .header-wrapper .header-contant {
-  width: 40%;
-  padding: 0 4.2rem;
+  width: 50%;
+  padding-right: 4.2rem;
   color: #4E4E4E;
 }
 
@@ -3782,7 +3782,7 @@ body.nav-open{
 @media (max-width: 991.8px) {
   .header-wrapper .header-contant {
     width: 80%;
-    padding: 4rem 1.5rem;
+    padding: 1rem;
     color: #4E4E4E;
   }
   .header-wrapper .header-video {
@@ -4805,8 +4805,10 @@ body.nav-open{
 
 @media (max-width: 991.8px) {
   .nav-breadcrumb {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 8.5rem;
+  }
+  .nav-breadcrumb svg{
+    bottom: -70px !important;
   }
   .nav-breadcrumb .ani-1 {
     top: -335px;
@@ -5152,5 +5154,17 @@ footer ul .social a {
   .navbar .option {
     width: 100%;
     justify-content: space-between;
+    margin-top: .35rem;
+  }
+  .navbar .option li .option-link {
+    padding: 0;
+    width: 45px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lang span{
+    display: none;
   }
 }
