@@ -3437,7 +3437,7 @@ body.nav-open{
   font-size: 24px;
   border: 0;
   position: relative;
-  z-index: 98698756;
+  z-index: 98;
 }
 .navbar-toggler-icon {
   filter: brightness(0) invert(1);
@@ -4806,10 +4806,10 @@ body.nav-open{
 @media (max-width: 991.8px) {
   .nav-breadcrumb {
     padding-top: 8.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
   }
   .nav-breadcrumb svg{
-    bottom: -70px !important;
+    bottom: -80px !important;
   }
   .nav-breadcrumb .ani-1 {
     top: -335px;
@@ -5188,5 +5188,8 @@ footer ul .social a {
   }
   .receipt td {
     display: inline-block;
+  }
+  .sub-menu{
+    left: auto !important;
   }
 }
