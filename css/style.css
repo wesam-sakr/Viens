@@ -5120,6 +5120,7 @@ footer ul .social a {
     background: url('../images/header.png');
     object-fit: cover;
     background-position: right;
+    background-repeat: no-repeat;
   }
   .header-wrapper {
     background: #00000077;
