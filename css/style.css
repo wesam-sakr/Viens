@@ -5200,6 +5200,7 @@ footer ul .social a {
     left: 1.2rem;
     flex-direction: column;
     grid-area: 0;
+    align-items: end;
   }
   .header-video .box-wrapper .box{
     padding: 2rem 0;
