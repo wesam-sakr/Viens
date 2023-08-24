@@ -47,7 +47,7 @@
                 <span class="navbar-toggler-icon">
                 </span>
               </button>
-              <a class="navbar-brand m-0" href="index.html"><img src="images/viens.svg" alt=""></a>
+              <a  class="navbar-brand m-0" href="index.html"><img src="images/viens.svg" alt=""></a>
             </div>
             
             <div class="nav-collapse justify-content-between align-items-center" id="navbarSupportedContent">
@@ -59,13 +59,13 @@
                   <a href="aboutUs.html" class="nav-link">من نحن</a>
                 </li>
                 <li class="nav-item">
-                  <a href="books.html" class="nav-link">الجامعات</a>
+                  <a href="universities.html" class="nav-link">الجامعات</a>
                 </li>
                 <li class="nav-item">
                   <a href="contactUs.html" class="nav-link">تواصل معنا </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="publish.html">الوكلاء</a>
+                  <a class="nav-link" href="proxies.html">الوكلاء</a>
                 </li>
                 <li class="nav-item">
                   <a href="jobs.html" class="nav-link">الوظائف</a>
@@ -74,52 +74,58 @@
                   <a href="profile.html" class="nav-link">الملف الشخصي</a>
                 </li>
                 <li class="nav-item">
-                  <a href="authors.html" class="nav-link">طلب الانضمام كشريك</a>
+                  <a href="askToJion.html" class="nav-link">طلب الانضمام كشريك</a>
                 </li>
               </ul> 
             </div>
 
-            <ul class="option text-dark wow animate__backInLeft" style="flex-direction: row !important;" data-wow-duration="2s" data-wow-delay=".5s">
+            <ul class="option text-dark wow animate__backInLeft" data-wow-duration="2s" data-wow-delay=".5s">
               <!-- note start
                 * view only on index
-                * used to mute sound of vedio
+                * used to mute vedio sound
+                * play vedio to show 
               -->
-              <li>
+              <li id="audio">
                 <button class="option-link">
                   <i class="bi bi-volume-up"></i>
                 </button>
               </li>
               <!-- end note -->
+
               <!-- if auth -->
               <li id="notif" class="has-menu auth">
                 <a role="button" class="option-link">
                   <i class="bi bi-bell"></i>
                 </a>
                 <div class="sub-menu">
-                  <div class="notifi">
-                    <a class="link" href="notifi.html"></a>
-                    <div class="notifi-img">
-                      <img src="images/viens.svg" alt="">
+                  <div class="notifi-wrapper">
+                    <div class="notifi new">
+                      <a class="link" href="notifi.html"></a>
+                      <span class="dot"></span>
+                      <div class="notifi-img">
+                        <img src="images/viens.svg" alt="">
+                      </div>
+                      <p class="cut-text">
+                        وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                      </p>
+                      <p class="date mb-0">22/01/2022</p>
                     </div>
-                    <p class="cut-text">
-                      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
-                    </p>
-                    <p class="date mb-0">22/01/2022</p>
-                  </div>
-                  <div class="notifi">
-                    <a class="link" href="notifi.html"></a>
-                    <div class="notifi-img">
-                      <img src="images/viens.svg" alt="">
+                    <div class="notifi">
+                      <a class="link" href="notifi.html"></a>
+                      <span class="dot"></span>
+                      <div class="notifi-img">
+                        <img src="images/viens.svg" alt="">
+                      </div>
+                      <p class="cut-text">
+                        وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                      </p>
+                      <p class="date mb-0">22/01/2022</p>
                     </div>
-                    <p class="cut-text">
-                      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
-                    </p>
-                    <p class="date mb-0">22/01/2022</p>
                   </div>
                 </div>
                 <span class="count">1</span>
               </li>
-              <li class="">
+              <li class="user-profile">
                 <a href="profile.html" class="option-link">
                   <i class="bi bi-person"></i>
                 </a>
@@ -130,18 +136,20 @@
                   <i class="bi bi-box-arrow-right"></i>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- end if -->
+
+              <li class="lang">
                 <a href="" class="option-link">
                   <span>English</span>
                   <i class="fa-solid fa-globe"></i>
                 </a>
               </li>
-              <li>
+              <li class="call">
                 <a href="tel:0137897687" class="option-link">
                   <i class="bi bi-telephone-outbound"></i>
                 </a>
               </li>
-              <li>
+              <li class="theme">
                 <button class="option-link">
                   <i class="bi bi-brightness-alt-high-fill"></i>
                 </button>
@@ -154,15 +162,15 @@
       <div class="header-wrapper">
         <div class="header-contant">
           <div class="container">
-            <a href="">
-              <div class="box blue">
+            <div class="box blue">
+                <a href="" class="link"></a>
                 <div class="box-img">
                   <img src="images/box.png" alt="">
                 </div>
                 <h2>البرامج التعليمية</h2>
               </div>
-            </a>
             <div class="box blue">
+              <a href="" class="link"></a>
               <div class="box-img">
                 <img src="images/box.png" alt="">
               </div>
@@ -189,12 +197,14 @@
           <div class="container">
             <div class="box-wrapper">
               <div class="box">
+                <a href="" class="link"></a>
                 <div class="box-img">
                   <img src="images/box.png" alt="">
                 </div>
                 <h2>البرامج التعليمية</h2>
               </div>
               <div class="box blue">
+                <a href="" class="link"></a>
                 <div class="box-img">
                   <img src="images/box.png" alt="">
                 </div>

@@ -14,6 +14,10 @@ $('.navbar-toggler').click(function(){
   $('body').toggleClass('nav-open')
 })
 
+$('.theme').click(function(){
+  $('.theme .bi').toggleClass('bi-brightness-alt-high-fill bi-cloud-moon')
+})
+
 
 // dir
 var bodyDir = $('body').css('direction')
@@ -65,16 +69,30 @@ $(document).ready(function () {
     document.querySelector(".header-video video").play();
     $(this).addClass("d-none");
     $(".pause-icon").removeClass("d-none");
+    $('#audio').fadeToggle(200)
     $('.video-cover-img').fadeOut(2000);
   })
   $(".pause-icon").click(function(){
     document.querySelector(".header-video video").pause();
     $(this).addClass("d-none");
+    $('#audio').fadeToggle(200)
     $(".play-icon").removeClass("d-none");
     $('.video-cover-img').fadeIn(2000);
   })
+  $("#audio").click(function(){
+    $('#audio .bi').toggleClass('bi-volume-up bi-volume-mute')
+    if( $(".header-video video").prop('muted') == true )
+    {
+        $(".header-video video").prop('muted', false);
+    }
+
+    else {
+    $(".header-video video").prop('muted', true);
+    }
+  })
   $('video').on('ended',function(){ 
     $('.video-cover-img').fadeIn(2000);
+    $('#audio').fadeToggle(200)
     $('.pause-icon').addClass("d-none");
     $(".play-icon").removeClass("d-none");
   });
