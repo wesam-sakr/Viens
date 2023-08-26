@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viens</title>
+  <link rel="shortcut icon" type="image/svg" href="images/viens.svg" />
+  <!-- bootstrapp-rtl -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <!-- bootstrap-icon -->
+  <link rel="stylesheet" href="css/font_bootstrap-icons.min.css">
+  <!-- fontawesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fancyBox link  -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <!-- reteYo -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+  <!-- owl carousel link -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- animate link -->
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- AR Style -->
+  <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
+  <!-- bootstrap-ltr -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <!-- ======= nav ======= -->
+  <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <a class="navbar-brand m-0" href="index.html"><img src="images/viens.svg" alt=""></a>
+      </div>
+
+      <div class="nav-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 wow animate__backInDown">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutUs.html" class="nav-link">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link">الجامعات</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="proxies.html">الوكلاء</a>
+          </li>
+          <li class="nav-item">
+            <a href="jobs.html" class="nav-link">الوظائف</a>
+          </li>
+          <li class="nav-item">
+            <a href="profile.html" class="nav-link">الملف الشخصي</a>
+          </li>
+          <li class="nav-item">
+            <a href="askToJion.html" class="nav-link">طلب الانضمام كشريك</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="option text-dark wow animate__backInLeft" style="flex-direction: row !important;"
+        data-wow-duration="2s" data-wow-delay=".5s">
+        <!-- if auth -->
+        <li id="notif" class="has-menu auth">
+          <a role="button" class="option-link">
+            <i class="bi bi-bell"></i>
+          </a>
+          <div class="sub-menu">
+            <div class="notifi-wrapper">
+              <div class="notifi new">
+                <a class="link" href="notifi.html"></a>
+                <span class="dot"></span>
+                <div class="notifi-img">
+                  <img src="images/viens.svg" alt="">
+                </div>
+                <p class="cut-text">
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                </p>
+                <p class="date mb-0">22/01/2022</p>
+              </div>
+              <div class="notifi">
+                <a class="link" href="notifi.html"></a>
+                <span class="dot"></span>
+                <div class="notifi-img">
+                  <img src="images/viens.svg" alt="">
+                </div>
+                <p class="cut-text">
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                </p>
+                <p class="date mb-0">22/01/2022</p>
+              </div>
+            </div>
+          </div>
+          <span class="count">1</span>
+        </li>
+        <li class="">
+          <a href="profile.html" class="option-link">
+            <i class="bi bi-person"></i>
+          </a>
+        </li>
+        <!-- else -->
+        <li>
+          <a href="login.html" class="option-link">
+            <i class="bi bi-box-arrow-right"></i>
+          </a>
+        </li>
+        <li class="lang">
+          <a href="" class="option-link">
+            <span>English</span>
+            <i class="fa-solid fa-globe"></i>
+          </a>
+        </li>
+        <li>
+          <a href="tel:0137897687" class="option-link">
+            <i class="bi bi-telephone-outbound"></i>
+          </a>
+        </li>
+        <li>
+          <button class="option-link">
+            <i class="bi bi-brightness-alt-high-fill"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======= breadcrumb ======= -->
+  <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="nav-breadcrumb">
+    <div class="container">
+      <img class="ani ani-1" src="images//Topology-1.svg" alt="" />
+      <img class="ani ani-2" src="images/Path 2568.svg" alt="" />
+      <h3 class="text-center wow animate__fadeInDown">التسجيل</h3>
+      <ol class="breadcrumb wow animate__fadeInLeft">
+        <li class="breadcrumb-item"><a href="index.html">الصفحة الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="proxies.html">الوكلاء</a></li>
+        <li class="breadcrumb-item active" aria-current="page">اسم الوكالة</li>
+      </ol>
+    </div>
+    <svg style="
+      position: absolute;
+      bottom: -205px;
+      z-index: -1;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#13518d" fill-opacity="1"
+        d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+      </path>
+    </svg>
+  </nav>
+
+  <section class="agent-page pb-5 wow animate__fadeInUpBig">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="agent-nav">
+          <div class="grid-agents">
+            <div class="circle-cover">
+              <img src="images/viens.svg" alt="">
+            </div>
+          </div>
+          <div>
+            <h1 class="agent-name fs-4">اسم الوكالة</h1>
+            <button class="follow">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span>متابعة</span>
+            </button>
+          </div>
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" href="agent-details.html">
+              <div class="icon">
+                <svg class="aboutA" xmlns="http://www.w3.org/2000/svg" width="37.142" height="31.919"
+                  viewBox="0 0 37.142 31.919">
+                  <g id="Group_76492" data-name="Group 76492" transform="translate(2700.809 -381)">
+                    <path id="Path_2504" data-name="Path 2504"
+                      d="M1.681,4.818C.759,4.818.1,5.207.1,5.781v7.811c0,.492.656.984,1.579.984.882,0,1.6-.492,1.6-.984V5.781C3.28,5.207,2.563,4.818,1.681,4.818ZM1.681,0A1.588,1.588,0,0,0,0,1.456,1.6,1.6,0,0,0,1.681,2.932,1.6,1.6,0,0,0,3.342,1.456,1.582,1.582,0,0,0,1.681,0Z"
+                      transform="translate(-2677.726 404.237) rotate(180)" fill="#4e4e4e" />
+                    <path id="Path_2505" data-name="Path 2505"
+                      d="M15.959,0a15.951,15.951,0,0,0-4.83,31.156l3.629,5.35a1.451,1.451,0,0,0,2.4,0l3.629-5.35A15.951,15.951,0,0,0,15.959,0Zm3.529,28.517a1.451,1.451,0,0,0-.81.583l-2.719,4.008L13.241,29.1a1.451,1.451,0,0,0-.81-.583,13.058,13.058,0,1,1,7.058,0Z"
+                      transform="translate(-2663.667 381) rotate(90)" fill="#4e4e4e" />
+                  </g>
+                </svg>
+              </div>
+              <span>نبذة عن الوكالة</span>
+            </a>
+            <a class="nav-link" href="agentFeatures.html">
+              <div class="icon">
+                <svg class="cat" xmlns="http://www.w3.org/2000/svg" width="28.708" height="28.703"
+                  viewBox="0 0 28.708 28.703">
+                  <g id="svgexport-17_39_" data-name="svgexport-17 (39)" transform="translate(-0.25 -0.25)">
+                    <path id="Path_25565" data-name="Path 25565"
+                      d="M9.97,12.567H2.936A2.689,2.689,0,0,1,.25,9.882V2.936A2.689,2.689,0,0,1,2.936.25H9.97a2.689,2.689,0,0,1,2.686,2.686V9.882A2.689,2.689,0,0,1,9.97,12.567ZM2.936,2.33a.607.607,0,0,0-.607.606V9.882a.607.607,0,0,0,.607.606H9.97a.607.607,0,0,0,.606-.606V2.936A.607.607,0,0,0,9.97,2.33ZM10,28.953H2.971A2.69,2.69,0,0,1,.284,26.267V19.322a2.689,2.689,0,0,1,2.686-2.686H10a2.689,2.689,0,0,1,2.684,2.686v6.945A2.689,2.689,0,0,1,10,28.953ZM2.971,18.716a.607.607,0,0,0-.607.606v6.945a.607.607,0,0,0,.607.607H10a.607.607,0,0,0,.606-.607V19.322A.607.607,0,0,0,10,18.716Zm23.3,10.238H19.234a2.69,2.69,0,0,1-2.686-2.686V19.322a2.689,2.689,0,0,1,2.686-2.686h7.034a2.689,2.689,0,0,1,2.686,2.686v6.945a2.689,2.689,0,0,1-2.686,2.686ZM19.234,18.72a.607.607,0,0,0-.607.606v6.945a.607.607,0,0,0,.607.607h7.034a.607.607,0,0,0,.606-.607v-6.95a.607.607,0,0,0-.606-.606Zm3.521-6.153a6.157,6.157,0,1,1,6.2-6.157,6.157,6.157,0,0,1-6.2,6.157Zm0-10.233a4.077,4.077,0,1,0,4.122,4.077,4.077,4.077,0,0,0-4.122-4.077Z"
+                      transform="translate(0 0)" fill="#4e4e4e" />
+                  </g>
+                </svg>
+              </div>
+              <span>المميزات</span>
+            </a>
+            <a class="nav-link" href="agentReview.html">
+              <div class="icon">
+                <svg class="allBooks" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="32.612" height="32.612" viewBox="0 0 32.612 32.612">
+                  <defs>
+                    <clipPath id="clip-path">
+                      <path id="Path_25556" data-name="Path 25556" d="M0-682.665H32.612v32.612H0Z"
+                        transform="translate(0 682.665)" fill="#4e4e4e" />
+                    </clipPath>
+                  </defs>
+                  <g id="Group_76469" data-name="Group 76469" clip-path="url(#clip-path)">
+                    <path id="Path_25548" data-name="Path 25548"
+                      d="M0-361.857v2.452a.637.637,0,0,0,.637.637H14.611a1.526,1.526,0,0,1,1.218-.605,1.526,1.526,0,0,1,1.218.605H31.02a.637.637,0,0,0,.637-.637v-19.969a.637.637,0,0,0-.637-.637H29.925"
+                      transform="translate(0.478 390.903)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25549" data-name="Path 25549" d="M-41.451,0h-1.443a.637.637,0,0,0-.637.637V15.245"
+                      transform="translate(44.008 10.891)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25550" data-name="Path 25550" d="M-548.106,0V16.269h-27.5V0"
+                      transform="translate(578.161 13.886)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25551" data-name="Path 25551"
+                      d="M-274.053-411.712s-5.182-4.288-13.749-1.274V-431.36a16.45,16.45,0,0,1,3.185-1.007"
+                      transform="translate(290.359 441.66)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25552" data-name="Path 25552"
+                      d="M-63.483-21.042A14.677,14.677,0,0,0-66.668-22.1V-2.762A15.748,15.748,0,0,1-56.1,5.518"
+                      transform="translate(72.41 24.43)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25553" data-name="Path 25553"
+                      d="M-147.1-202.019s.2-8.547-7.38-10.135v19.335c7.58,1.588,7.38,10.135,7.38,10.135Z"
+                      transform="translate(163.407 212.632)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25554" data-name="Path 25554"
+                      d="M0-405.259s5.182-4.288,13.749-1.274v-18.374a14.341,14.341,0,0,0-1.91-.683"
+                      transform="translate(16.306 435.207)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                    <path id="Path_25555" data-name="Path 25555"
+                      d="M-235.965-165.54v11.03a16.86,16.86,0,0,0-11.838,4.459v-19.335a16.86,16.86,0,0,1,11.838-4.459v5.375"
+                      transform="translate(264.111 179.999)" fill="none" stroke="#4e4e4e" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                  </g>
+                </svg>
+              </div>
+              <span>آراء الطلاب</span>
+            </a>
+            <a class="nav-link" href="changeAgency.html">
+              <div class="icon">
+                <svg class="lv" xmlns="http://www.w3.org/2000/svg" width="37.976" height="42.053"
+                  viewBox="0 0 37.976 42.053">
+                  <g id="svgexport-17_38_" data-name="svgexport-17 (38)" transform="translate(-24.339 1.059)">
+                    <path id="Path_25557" data-name="Path 25557"
+                      d="M54.5,26.643H52.83a.616.616,0,1,0-1.135,0H47.713a3.986,3.986,0,0,1-.518-1.214l-.239-.976a.813.813,0,0,0-1.58,0l-.239.976a3.987,3.987,0,0,1-.518,1.214H33.937a3,3,0,0,0-2.994,2.994v9.14a5.058,5.058,0,0,1-1.7,1.187.614.614,0,0,0-.092.051.853.853,0,0,0,0,1.42.614.614,0,0,0,.092.051,4.385,4.385,0,0,1,2.629,2.941l.239.976a.813.813,0,0,0,1.58,0l.239-.976a4.385,4.385,0,0,1,2.629-2.941.609.609,0,0,0,.092-.051.853.853,0,0,0,0-1.42.618.618,0,0,0-.092-.051,4.385,4.385,0,0,1-2.629-2.941l-.239-.976a.813.813,0,0,0-1.521-.162V34.7H32.2a.616.616,0,0,0,0-1.232h-.022V29.637a1.765,1.765,0,0,1,1.763-1.763h5.1a.616.616,0,0,0,1.207,0H43.4a5.588,5.588,0,0,1-.894.5.614.614,0,0,0-.092.051.853.853,0,0,0,0,1.42.615.615,0,0,0,.092.051,4.385,4.385,0,0,1,2.629,2.941l.239.976a.813.813,0,0,0,1.58,0l.239-.976a4.385,4.385,0,0,1,2.629-2.941.609.609,0,0,0,.092-.051.853.853,0,0,0,0-1.42.618.618,0,0,0-.092-.051,5.588,5.588,0,0,1-.894-.5H54.5a.336.336,0,0,1,.336.336V39.165a.616.616,0,1,0,1.231,0V28.21A1.569,1.569,0,0,0,54.5,26.643ZM32.9,37.87a5.41,5.41,0,0,0,2.443,2.855A5.409,5.409,0,0,0,32.9,43.579a5.41,5.41,0,0,0-2.443-2.855A5.41,5.41,0,0,0,32.9,37.87Zm13.261-5.885a5.41,5.41,0,0,0-2.443-2.855,5.41,5.41,0,0,0,2.443-2.855,5.41,5.41,0,0,0,2.443,2.855,5.41,5.41,0,0,0-2.443,2.855Zm9.284,9.482a.616.616,0,0,0-.616.616V52.7a.336.336,0,0,1-.336.336H34.459a3.531,3.531,0,0,0-2.285.846V50.414a.616.616,0,0,0-1.231,0v6.137a3.52,3.52,0,0,0,3.517,3.517h8.5V62.9a.938.938,0,0,0,.516.84,1,1,0,0,0,.982-.08L46.4,62.241l1.943,1.421a.942.942,0,0,0,1.5-.76V60.068h3.8a.873.873,0,0,0,.611-1.5,2.849,2.849,0,0,1,.311-4.31,1.568,1.568,0,0,0,1.5-1.563V42.083a.616.616,0,0,0-.616-.616ZM46.766,60.981a.616.616,0,0,0-.727,0l-1.846,1.35V56.973h4.418v5.358Zm6.119-2.145H49.843V56.905a.615.615,0,0,0-.281-1.163H40.519a.616.616,0,1,0,0,1.231h2.443v1.863h-8.5a2.285,2.285,0,1,1,0-4.57H52.885a4.087,4.087,0,0,0,0,4.57Zm9.095-22.608a.619.619,0,0,0-.092-.051,2.242,2.242,0,0,1-1.38-1.533l-.139-.567h0a.729.729,0,0,0-.71-.557h0a.729.729,0,0,0-.709.557l-.139.567a2.242,2.242,0,0,1-1.38,1.533.616.616,0,0,0-.092.051.754.754,0,0,0,0,1.254.612.612,0,0,0,.092.051,2.242,2.242,0,0,1,1.38,1.533l.139.567a.729.729,0,0,0,.709.557h0a.729.729,0,0,0,.71-.557l.139-.567a2.242,2.242,0,0,1,1.38-1.533.613.613,0,0,0,.092-.051.754.754,0,0,0,0-1.254ZM59.659,37.9a3.378,3.378,0,0,0-.947-1.044,3.378,3.378,0,0,0,.947-1.044,3.378,3.378,0,0,0,.947,1.044A3.378,3.378,0,0,0,59.659,37.9ZM29.316,52.183a.614.614,0,0,0-.092-.051,2.242,2.242,0,0,1-1.38-1.533l-.139-.567h0a.729.729,0,0,0-.71-.557h0a.729.729,0,0,0-.709.557l-.139.567a2.242,2.242,0,0,1-1.38,1.533.615.615,0,0,0-.092.051.754.754,0,0,0,0,1.254.617.617,0,0,0,.092.051,2.242,2.242,0,0,1,1.38,1.533l.139.567a.729.729,0,0,0,.709.557h0a.729.729,0,0,0,.71-.557l.139-.567a2.242,2.242,0,0,1,1.38-1.533.611.611,0,0,0,.092-.051.754.754,0,0,0,0-1.254ZM27,53.854a3.378,3.378,0,0,0-.947-1.044A3.377,3.377,0,0,0,27,51.766a3.378,3.378,0,0,0,.947,1.044A3.381,3.381,0,0,0,27,53.854Z"
+                      transform="translate(0 -22.85)" fill="#4e4e4e" />
+                    <circle id="Ellipse_135" data-name="Ellipse 135" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(34.353 10.908)" fill="#4e4e4e" />
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(36.744 12.291)" fill="#4e4e4e" />
+                    <path id="Path_25558" data-name="Path 25558"
+                      d="M195.711,189.757a.616.616,0,1,0,.616-.616A.616.616,0,0,0,195.711,189.757Z"
+                      transform="translate(-157.326 -174.61)" fill="#4e4e4e" />
+                    <circle id="Ellipse_137" data-name="Ellipse 137" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(38.779 18.203) rotate(-67.48)" fill="#4e4e4e" />
+                    <circle id="Ellipse_138" data-name="Ellipse 138" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(38.385 19.969)" fill="#4e4e4e" />
+                    <path id="Path_25559" data-name="Path 25559"
+                      d="M175.681,283.5a.616.616,0,1,0,.616-.616A.616.616,0,0,0,175.681,283.5Z"
+                      transform="translate(-138.937 -260.667)" fill="#4e4e4e" />
+                    <circle id="Ellipse_139" data-name="Ellipse 139" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(34.353 23.604)" fill="#4e4e4e" />
+                    <path id="Path_25560" data-name="Path 25560"
+                      d="M113.923,303.983a.616.616,0,1,0-.616.616A.616.616,0,0,0,113.923,303.983Z"
+                      transform="translate(-81.11 -279.473)" fill="#4e4e4e" />
+                    <circle id="Ellipse_140" data-name="Ellipse 140" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(28.849 23.145) rotate(-9.25)" fill="#4e4e4e" />
+                    <path id="Path_25561" data-name="Path 25561"
+                      d="M43.466,210.881a.616.616,0,1,0,.616.616.616.616,0,0,0-.616-.616Zm-1.131-1.3a.616.616,0,1,0-.616-.616A.616.616,0,0,0,42.335,209.581Zm0-2.773a.616.616,0,1,0-.616-.616A.616.616,0,0,0,42.335,206.808Z"
+                      transform="translate(-15.955 -189.698)" fill="#4e4e4e" />
+                    <circle id="Ellipse_141" data-name="Ellipse 141" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(26.886 13.343)" fill="#4e4e4e" />
+                    <circle id="Ellipse_142" data-name="Ellipse 142" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(28.76 12.429) rotate(-67.48)" fill="#4e4e4e" />
+                    <path id="Path_25562" data-name="Path 25562"
+                      d="M308.923,4.719a.616.616,0,1,0-.616-.616A.616.616,0,0,0,308.923,4.719Zm2.39,1.384a.616.616,0,1,0-.616-.616A.616.616,0,0,0,311.313,6.1Z"
+                      transform="translate(-260.693 -4.173)" fill="#4e4e4e" />
+                    <circle id="Ellipse_143" data-name="Ellipse 143" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(52.221 5.656)" fill="#4e4e4e" />
+                    <path id="Path_25563" data-name="Path 25563"
+                      d="M281.283,114.656a.616.616,0,1,0,.616-.616A.616.616,0,0,0,281.283,114.656Zm-.41,2.245a.616.616,0,1,0-.616.616A.616.616,0,0,0,280.873,116.9Zm-2.39,1.389a.616.616,0,1,0-.616.616A.616.616,0,0,0,278.483,118.29Zm-2.773.29a.616.616,0,1,0-.616.616A.616.616,0,0,0,275.71,118.58Z"
+                      transform="translate(-229.636 -105.665)" fill="#4e4e4e" />
+                    <circle id="Ellipse_144" data-name="Ellipse 144" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(42.206 11.445)" fill="#4e4e4e" />
+                    <path id="Path_25564" data-name="Path 25564"
+                      d="M205.254,42.269a.616.616,0,1,0-.616-.616.616.616,0,0,0,.616.616Zm-1.131-3.764a.616.616,0,1,0,.616.616A.616.616,0,0,0,204.123,38.505Zm1.123-4.076a.616.616,0,1,0-.616-.616.616.616,0,0,0,.616.616Z"
+                      transform="translate(-164.483 -31.448)" fill="#4e4e4e" />
+                    <circle id="Ellipse_145" data-name="Ellipse 145" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(42.206 -0.117)" fill="#4e4e4e" />
+                    <circle id="Ellipse_146" data-name="Ellipse 146" cx="0.616" cy="0.616" r="0.616"
+                      transform="translate(44.749 -0.861) rotate(-9.25)" fill="#4e4e4e" />
+                  </g>
+                </svg>
+              </div>
+              <span>طلب تغيير وكالة</span>
+            </a>
+            <button class="nav-link justify-content-center newOrder"  data-bs-toggle="modal" 
+            data-bs-target="#newOrderModal">
+              <div class="icon">
+                <svg class="lv" xmlns="http://www.w3.org/2000/svg" width="37.976" height="42.053" viewBox="0 0 37.976 42.053">
+                  <g id="svgexport-17_38_" data-name="svgexport-17 (38)" transform="translate(-24.339 1.059)">
+                    <path id="Path_25557" data-name="Path 25557" d="M54.5,26.643H52.83a.616.616,0,1,0-1.135,0H47.713a3.986,3.986,0,0,1-.518-1.214l-.239-.976a.813.813,0,0,0-1.58,0l-.239.976a3.987,3.987,0,0,1-.518,1.214H33.937a3,3,0,0,0-2.994,2.994v9.14a5.058,5.058,0,0,1-1.7,1.187.614.614,0,0,0-.092.051.853.853,0,0,0,0,1.42.614.614,0,0,0,.092.051,4.385,4.385,0,0,1,2.629,2.941l.239.976a.813.813,0,0,0,1.58,0l.239-.976a4.385,4.385,0,0,1,2.629-2.941.609.609,0,0,0,.092-.051.853.853,0,0,0,0-1.42.618.618,0,0,0-.092-.051,4.385,4.385,0,0,1-2.629-2.941l-.239-.976a.813.813,0,0,0-1.521-.162V34.7H32.2a.616.616,0,0,0,0-1.232h-.022V29.637a1.765,1.765,0,0,1,1.763-1.763h5.1a.616.616,0,0,0,1.207,0H43.4a5.588,5.588,0,0,1-.894.5.614.614,0,0,0-.092.051.853.853,0,0,0,0,1.42.615.615,0,0,0,.092.051,4.385,4.385,0,0,1,2.629,2.941l.239.976a.813.813,0,0,0,1.58,0l.239-.976a4.385,4.385,0,0,1,2.629-2.941.609.609,0,0,0,.092-.051.853.853,0,0,0,0-1.42.618.618,0,0,0-.092-.051,5.588,5.588,0,0,1-.894-.5H54.5a.336.336,0,0,1,.336.336V39.165a.616.616,0,1,0,1.231,0V28.21A1.569,1.569,0,0,0,54.5,26.643ZM32.9,37.87a5.41,5.41,0,0,0,2.443,2.855A5.409,5.409,0,0,0,32.9,43.579a5.41,5.41,0,0,0-2.443-2.855A5.41,5.41,0,0,0,32.9,37.87Zm13.261-5.885a5.41,5.41,0,0,0-2.443-2.855,5.41,5.41,0,0,0,2.443-2.855,5.41,5.41,0,0,0,2.443,2.855,5.41,5.41,0,0,0-2.443,2.855Zm9.284,9.482a.616.616,0,0,0-.616.616V52.7a.336.336,0,0,1-.336.336H34.459a3.531,3.531,0,0,0-2.285.846V50.414a.616.616,0,0,0-1.231,0v6.137a3.52,3.52,0,0,0,3.517,3.517h8.5V62.9a.938.938,0,0,0,.516.84,1,1,0,0,0,.982-.08L46.4,62.241l1.943,1.421a.942.942,0,0,0,1.5-.76V60.068h3.8a.873.873,0,0,0,.611-1.5,2.849,2.849,0,0,1,.311-4.31,1.568,1.568,0,0,0,1.5-1.563V42.083a.616.616,0,0,0-.616-.616ZM46.766,60.981a.616.616,0,0,0-.727,0l-1.846,1.35V56.973h4.418v5.358Zm6.119-2.145H49.843V56.905a.615.615,0,0,0-.281-1.163H40.519a.616.616,0,1,0,0,1.231h2.443v1.863h-8.5a2.285,2.285,0,1,1,0-4.57H52.885a4.087,4.087,0,0,0,0,4.57Zm9.095-22.608a.619.619,0,0,0-.092-.051,2.242,2.242,0,0,1-1.38-1.533l-.139-.567h0a.729.729,0,0,0-.71-.557h0a.729.729,0,0,0-.709.557l-.139.567a2.242,2.242,0,0,1-1.38,1.533.616.616,0,0,0-.092.051.754.754,0,0,0,0,1.254.612.612,0,0,0,.092.051,2.242,2.242,0,0,1,1.38,1.533l.139.567a.729.729,0,0,0,.709.557h0a.729.729,0,0,0,.71-.557l.139-.567a2.242,2.242,0,0,1,1.38-1.533.613.613,0,0,0,.092-.051.754.754,0,0,0,0-1.254ZM59.659,37.9a3.378,3.378,0,0,0-.947-1.044,3.378,3.378,0,0,0,.947-1.044,3.378,3.378,0,0,0,.947,1.044A3.378,3.378,0,0,0,59.659,37.9ZM29.316,52.183a.614.614,0,0,0-.092-.051,2.242,2.242,0,0,1-1.38-1.533l-.139-.567h0a.729.729,0,0,0-.71-.557h0a.729.729,0,0,0-.709.557l-.139.567a2.242,2.242,0,0,1-1.38,1.533.615.615,0,0,0-.092.051.754.754,0,0,0,0,1.254.617.617,0,0,0,.092.051,2.242,2.242,0,0,1,1.38,1.533l.139.567a.729.729,0,0,0,.709.557h0a.729.729,0,0,0,.71-.557l.139-.567a2.242,2.242,0,0,1,1.38-1.533.611.611,0,0,0,.092-.051.754.754,0,0,0,0-1.254ZM27,53.854a3.378,3.378,0,0,0-.947-1.044A3.377,3.377,0,0,0,27,51.766a3.378,3.378,0,0,0,.947,1.044A3.381,3.381,0,0,0,27,53.854Z" transform="translate(0 -22.85)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_135" data-name="Ellipse 135" cx="0.616" cy="0.616" r="0.616" transform="translate(34.353 10.908)" fill="#4e4e4e"></circle>
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="0.616" cy="0.616" r="0.616" transform="translate(36.744 12.291)" fill="#4e4e4e"></circle>
+                    <path id="Path_25558" data-name="Path 25558" d="M195.711,189.757a.616.616,0,1,0,.616-.616A.616.616,0,0,0,195.711,189.757Z" transform="translate(-157.326 -174.61)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_137" data-name="Ellipse 137" cx="0.616" cy="0.616" r="0.616" transform="translate(38.779 18.203) rotate(-67.48)" fill="#4e4e4e"></circle>
+                    <circle id="Ellipse_138" data-name="Ellipse 138" cx="0.616" cy="0.616" r="0.616" transform="translate(38.385 19.969)" fill="#4e4e4e"></circle>
+                    <path id="Path_25559" data-name="Path 25559" d="M175.681,283.5a.616.616,0,1,0,.616-.616A.616.616,0,0,0,175.681,283.5Z" transform="translate(-138.937 -260.667)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_139" data-name="Ellipse 139" cx="0.616" cy="0.616" r="0.616" transform="translate(34.353 23.604)" fill="#4e4e4e"></circle>
+                    <path id="Path_25560" data-name="Path 25560" d="M113.923,303.983a.616.616,0,1,0-.616.616A.616.616,0,0,0,113.923,303.983Z" transform="translate(-81.11 -279.473)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_140" data-name="Ellipse 140" cx="0.616" cy="0.616" r="0.616" transform="translate(28.849 23.145) rotate(-9.25)" fill="#4e4e4e"></circle>
+                    <path id="Path_25561" data-name="Path 25561" d="M43.466,210.881a.616.616,0,1,0,.616.616.616.616,0,0,0-.616-.616Zm-1.131-1.3a.616.616,0,1,0-.616-.616A.616.616,0,0,0,42.335,209.581Zm0-2.773a.616.616,0,1,0-.616-.616A.616.616,0,0,0,42.335,206.808Z" transform="translate(-15.955 -189.698)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_141" data-name="Ellipse 141" cx="0.616" cy="0.616" r="0.616" transform="translate(26.886 13.343)" fill="#4e4e4e"></circle>
+                    <circle id="Ellipse_142" data-name="Ellipse 142" cx="0.616" cy="0.616" r="0.616" transform="translate(28.76 12.429) rotate(-67.48)" fill="#4e4e4e"></circle>
+                    <path id="Path_25562" data-name="Path 25562" d="M308.923,4.719a.616.616,0,1,0-.616-.616A.616.616,0,0,0,308.923,4.719Zm2.39,1.384a.616.616,0,1,0-.616-.616A.616.616,0,0,0,311.313,6.1Z" transform="translate(-260.693 -4.173)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_143" data-name="Ellipse 143" cx="0.616" cy="0.616" r="0.616" transform="translate(52.221 5.656)" fill="#4e4e4e"></circle>
+                    <path id="Path_25563" data-name="Path 25563" d="M281.283,114.656a.616.616,0,1,0,.616-.616A.616.616,0,0,0,281.283,114.656Zm-.41,2.245a.616.616,0,1,0-.616.616A.616.616,0,0,0,280.873,116.9Zm-2.39,1.389a.616.616,0,1,0-.616.616A.616.616,0,0,0,278.483,118.29Zm-2.773.29a.616.616,0,1,0-.616.616A.616.616,0,0,0,275.71,118.58Z" transform="translate(-229.636 -105.665)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_144" data-name="Ellipse 144" cx="0.616" cy="0.616" r="0.616" transform="translate(42.206 11.445)" fill="#4e4e4e"></circle>
+                    <path id="Path_25564" data-name="Path 25564" d="M205.254,42.269a.616.616,0,1,0-.616-.616.616.616,0,0,0,.616.616Zm-1.131-3.764a.616.616,0,1,0,.616.616A.616.616,0,0,0,204.123,38.505Zm1.123-4.076a.616.616,0,1,0-.616-.616.616.616,0,0,0,.616.616Z" transform="translate(-164.483 -31.448)" fill="#4e4e4e"></path>
+                    <circle id="Ellipse_145" data-name="Ellipse 145" cx="0.616" cy="0.616" r="0.616" transform="translate(42.206 -0.117)" fill="#4e4e4e"></circle>
+                    <circle id="Ellipse_146" data-name="Ellipse 146" cx="0.616" cy="0.616" r="0.616" transform="translate(44.749 -0.861) rotate(-9.25)" fill="#4e4e4e"></circle>
+                  </g>
+                </svg>
+
+              </div>
+              <span>طلب جديد</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="container-gap">
+          <div class="aboutAgent">
+            <div class="head">
+              <h4>نبذة عن الوكالة</h4>
+            </div>
+            <div class="content">
+              <p>
+                وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص
+                من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم وعند
+                موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+                التصميم ويتم وضع النصوص النهائية المطلوبة للتصوعند موافقه
+                العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم
+                ويتم وضع النصوص النهائية المطلوبة للتصميم وعند موافقه العميل
+                المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                النصوص النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه
+                على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+                النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه على
+                التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوصوعند
+                موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+                التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم وعند
+                موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+                التصميم ويتم وضع النصوص النهائية المطلوبة للتصوعند موافقه
+                العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم
+                ويتم وضع النصوص النهائية المطلوبة للتصميم وعند موافقه العميل
+                المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                النصوص النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه
+                على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+                النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه على
+                التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+                النهائية المطلوبة للتصميم ميم النهائية المطلوبة للتصميم ميم
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ======= footer ======= -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <img src="images/viens.svg" alt="" class="logo wow animate__tada" />
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <h3 class="header-title">خريطة الموقع</h3>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li class="wow animate__fadeInRight" data-wow-delay="0">
+                  <a href="index.html"> الرئيسية </a>
+                </li>
+                <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                  <a href="aboutUs.html"> من نحن </a>
+                </li>
+                <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                  <a href="services.html"> الخدمات </a>
+                </li>
+                <li class="wow animate__fadeInRight" data-wow-delay=".8s">
+                  <a href="education.html"> البرامج التعليمية </a>
+                </li>
+                <li class="wow animate__fadeInRight" data-wow-delay="1s">
+                  <a href="contactUs.html"> تواصل معنا </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                  <a href="gallery.html"> المعرض </a>
+                </li>
+                <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+                  <a href="blog.html"> المقالات </a>
+                </li>
+                <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                  <a href="jobs.html"> الوظائف </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-auto">
+          <h3 class="header-title">المساعدة</h3>
+          <ul>
+            <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+              <a href="privacyPolicy.html"> سياسة الخصوصية </a>
+            </li>
+            <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+              <a href="condition.html"> الشروط والأحكام </a>
+            </li>
+            <li class="wow animate__fadeInRight" data-wow-delay="0">
+              <a href="question.html"> الأسئلة الشائعة </a>
+            </li>
+            <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+              <a href="login.html"> التسجيل </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-auto">
+          <h3 class="header-title">معلومات التواصل</h3>
+          <ul>
+            <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+              <a href="">
+                البريد الإلكتروني
+                <span>: mail@mail.com </span>
+              </a>
+            </li>
+            <li class="wow animate__fadeInRight" data-wow-delay="0">
+              <a href="tel:+966568565">
+                المقر
+                <span>: عنوان القمر يكتب هنا</span>
+              </a>
+            </li>
+            <li class="wow animate__fadeInRight" data-wow-delay="0">
+              <a href="tel:+966568565">
+                رقم الجوال
+                <span>: +9658547856</span>
+              </a>
+            </li>
+
+            <li class="social mt-4 wow animate__fadeInRight" data-wow-delay=".4s">
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="newOrderModal" tabindex="-1" aria-labelledby="newOrderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content py-4 px-5">
+        <div class="modal-header border-0">
+          <h1 class="modal-title m-auto fs-5" id="newOrderModalLabel">ارسال طلب جديد للوكالة</h1>
+          <button type="button" class="m-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="std-address" class="col-form-label">عنوان الطلب</label>
+                  <input type="text" class="form-control" id="std-address">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="uni-name" class="col-form-label">اسم الجامعة</label>
+                  <input type="text" class="form-control" id="uni-name">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <label for="" class="col-form-label">اسم البرنامج</label>
+                  <select type="text" class="form-control mb-3">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <label for="message-txt" class="col-form-label">رسالة الطلب للايجينت</label>
+                  <textarea class="form-control" id="message-txt" rows="4"></textarea>
+                </div>
+              </div>
+              <div class="col-6">
+                <button type="button" class="main-btn">ارسال الطلب</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- fancyBox script -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!-- JS Coded -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- nice select script -->
+  <script src="js/wow.min.js"></script>
+
+  <script src="js/jquery.nice-select.min.js"></script>
+  <!-- owl carousel script -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- purecount -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"
+    integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/PureCounter.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

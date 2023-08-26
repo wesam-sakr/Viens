@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viens</title>
+    <link rel="shortcut icon" type="image/svg" href="images/viens.svg" />
+    <!-- bootstrapp-rtl -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="css/font_bootstrap-icons.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <!-- reteYo -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- owl carousel link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- animate link -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AR Style -->
+    <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
+    <!-- bootstrap-ltr -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <!-- ======= nav ======= -->
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar">
+        <div class="container">
+            <div class="d-flex align-items-center wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <a class="navbar-brand m-0" href="index.html"><img src="images/viens.svg" alt=""></a>
+            </div>
+
+            <div class="nav-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 wow animate__backInDown">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutUs.html" class="nav-link">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="universities.html" class="nav-link">الجامعات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proxies.html">الوكلاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="jobs.html active" class="nav-link">الوظائف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="askToJion.html" class="nav-link">طلب الانضمام كشريك</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="option text-dark wow animate__backInLeft" style="flex-direction: row !important;"
+                data-wow-duration="2s" data-wow-delay=".5s">
+                <!-- if auth -->
+                <li id="notif" class="has-menu auth">
+                    <a role="button" class="option-link">
+                        <i class="bi bi-bell"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="notifi-wrapper">
+                            <div class="notifi new">
+                                <a class="link" href="notifi.html"></a>
+                                <span class="dot"></span>
+                                <div class="notifi-img">
+                                    <img src="images/viens.svg" alt="">
+                                </div>
+                                <p class="cut-text">
+                                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                                    النصوص النهائية
+                                </p>
+                                <p class="date mb-0">22/01/2022</p>
+                            </div>
+                            <div class="notifi">
+                                <a class="link" href="notifi.html"></a>
+                                <span class="dot"></span>
+                                <div class="notifi-img">
+                                    <img src="images/viens.svg" alt="">
+                                </div>
+                                <p class="cut-text">
+                                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                                    النصوص النهائية
+                                </p>
+                                <p class="date mb-0">22/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="count">1</span>
+                </li>
+                <li class="">
+                    <a href="profile.html" class="option-link">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+                <!-- else -->
+                <li>
+                    <a href="login.html" class="option-link">
+                        <i class="bi bi-box-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="lang">
+                    <a href="" class="option-link">
+                        <span>English</span>
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:0137897687" class="option-link">
+                        <i class="bi bi-telephone-outbound"></i>
+                    </a>
+                </li>
+                <li>
+                    <button class="option-link">
+                        <i class="bi bi-brightness-alt-high-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======= breadcrumb ======= -->
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="nav-breadcrumb">
+        <div class="container">
+            <img class="ani ani-1" src="images//Topology-1.svg" alt="" />
+            <img class="ani ani-2" src="images/Path 2568.svg" alt="" />
+            <h3 class="text-center wow animate__fadeInDown">التسجيل</h3>
+            <ol class="breadcrumb wow animate__fadeInLeft">
+                <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">الوظائف</li>
+            </ol>
+        </div>
+        <svg style="
+      position: absolute;
+      bottom: -205px;
+      z-index: -1;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#13518d" fill-opacity="1"
+                d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+            </path>
+        </svg>
+    </nav>
+
+    <section class="pb-5">
+        <div class="row gy-3">
+            <div class="col-lg-3">
+                <div class="filter">
+                    <div class="container">
+                        <div class="filter-wrapper">
+                            <div class="d-flex align-items-center" style="gap:10px">
+                                <h5 class="title">التصفية</h5>
+                                <input type="search" class="form-control my-3" placeholder="كلمة البحث تكتب هنا">
+                            </div>
+                            <button class="filter-btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#jobFilter" aria-controls="jobFilter">
+                                <i class="bi bi-sliders  fs-2"></i>
+                            </button>
+                        </div>
+                        <div class="filter-lg">
+                            <h5 class="title">التصفية</h5>
+                            <input type="search" class="form-control mb-3" placeholder="كلمة البحث تكتب هنا">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" class=""
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            الدولة
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body pt-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="country1">
+                                                <label class="form-check-label" for="country1">
+                                                    تركيا
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="country2">
+                                                <label class="form-check-label" for="country2">
+                                                    ماليزيا
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="country3">
+                                                <label class="form-check-label" for="country3">
+                                                    امريكا
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="country4">
+                                                <label class="form-check-label" for="country4">
+                                                    نتجيريا
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="country5">
+                                                <label class="form-check-label" for="country5">
+                                                    مصر
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            المدينة
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body pt-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            الجامعة
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            هناك حقيقة مثبتة منذ زمن طويل
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="container-gap">
+                    <div class="jobs">
+                        <div class="job-wrapper">
+                            <a class="link" href="job-details.html"></a>
+                            <div class="job-img">
+                                <img src="images/viens.svg" alt="">
+                            </div>
+                            <div class="job-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h5 class="job-title">(الوظيفة تكتب هنا)</h5>
+                                        <h5 class="company-name">اسم الشركة</h5>
+                                    </div>
+                                    <button type="submit" class="apply-btn" data-bs-toggle="modal" data-bs-target="#applayJobModal">تقديم سريع</button>
+                                </div>
+                                <div class="job-notes">
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>العنوان يكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-regular fa-building"></i>
+                                        <p>دوام كامل</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <p>الخبرة تكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <p>منذ 5 ساعات</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-wrapper">
+                            <a class="link" href="job-details.html"></a>
+                            <div class="job-img">
+                                <img src="images/viens.svg" alt="">
+                            </div>
+                            <div class="job-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h5 class="job-title">(الوظيفة تكتب هنا)</h5>
+                                        <h5 class="company-name">اسم الشركة</h5>
+                                    </div>
+                                    <button type="submit" class="apply-btn" data-bs-toggle="modal" data-bs-target="#applayJobModal">تقديم سريع</button>
+                                </div>
+                                <div class="job-notes">
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>العنوان يكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-regular fa-building"></i>
+                                        <p>دوام كامل</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <p>الخبرة تكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <p>منذ 5 ساعات</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-wrapper">
+                            <a class="link" href="job-details.html"></a>
+                            <div class="job-img">
+                                <img src="images/viens.svg" alt="">
+                            </div>
+                            <div class="job-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h5 class="job-title">(الوظيفة تكتب هنا)</h5>
+                                        <h5 class="company-name">اسم الشركة</h5>
+                                    </div>
+                                    <button type="submit" class="apply-btn" data-bs-toggle="modal" data-bs-target="#applayJobModal">تقديم سريع</button>
+                                </div>
+                                <div class="job-notes">
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>العنوان يكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-regular fa-building"></i>
+                                        <p>دوام كامل</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <p>الخبرة تكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <p>منذ 5 ساعات</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-wrapper">
+                            <a class="link" href="job-details.html"></a>
+                            <div class="job-img">
+                                <img src="images/viens.svg" alt="">
+                            </div>
+                            <div class="job-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h5 class="job-title">(الوظيفة تكتب هنا)</h5>
+                                        <h5 class="company-name">اسم الشركة</h5>
+                                    </div>
+                                    <button type="submit" class="apply-btn" data-bs-toggle="modal" data-bs-target="#applayJobModal">تقديم سريع</button>
+                                </div>
+                                <div class="job-notes">
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>العنوان يكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-regular fa-building"></i>
+                                        <p>دوام كامل</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <p>الخبرة تكتب هنا</p>
+                                    </div>
+                                    <div class="job-note">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <p>منذ 5 ساعات</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= filter data ======= -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="jobFilter" aria-labelledby="jobFilterLabel" style="z-index: 34199;">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="jobFilterLabel">التصفية</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+        </div>
+        <div class="offcanvas-body">
+        <div class="search wow animate__backInUp" style="visibility: visible; animation-name: backInUp;">
+            <ul class="search-wrapper">
+            <li class="input-group">
+                <input type="text" class="form-control" placeholder="كلمة البحث" aria-label="searchKey" aria-describedby="basic-addon1">
+                <button class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </li>
+            </ul>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" class=""
+                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                الدولة
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="country1">
+                    <label class="form-check-label" for="country1">
+                    تركيا
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="country2">
+                    <label class="form-check-label" for="country2">
+                    ماليزيا
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="country3">
+                    <label class="form-check-label" for="country3">
+                    امريكا
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="country4">
+                    <label class="form-check-label" for="country4">
+                    نتجيريا
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="country5">
+                    <label class="form-check-label" for="country5">
+                    مصر
+                    </label>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                المدينة
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0">
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                الجامعة
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                هناك حقيقة مثبتة منذ زمن طويل
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="applayJobModal" tabindex="-1" aria-labelledby="applayJobModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content py-4 px-5">
+            <div class="modal-header border-0">
+              <h1 class="modal-title m-auto fs-5" id="applayJobModalLabel">التقديم على الوظيفة</h1>
+              <button type="button" class="m-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="app-fname" class="col-form-label">الاسم الاول</label>
+                      <input type="text" class="form-control" id="app-fname">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="app-lname" class="col-form-label">الاسم الاخير</label>
+                      <input type="text" class="form-control" id="app-lname">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="app-mail" class="col-form-label">البريد الإلكتروني</label>
+                      <input type="email" class="form-control" id="app-mail">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="app-phone" class="col-form-label">رقم الجوال</label>
+                      <input type="text" class="form-control" id="app-phone">
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="CV" class="col-form-label">ادراج السيرة الذاتية</label>
+                    <div id="file-input" class="form-control">
+                        <input type="file" id="CV" accept=".pdf,.doc,.docx,.txt">
+                        <span class="button">
+                          <i class="bi bi-paperclip"></i>
+                        </span>
+                        <span class="label" data-js-label="">قم بتحميل السيرة الذاتية الخاصة بك
+                      </span></div>
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="main-btn mt-5">ارسال الطلب</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- ======= footer ======= -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="text-center">
+                <img src="images/viens.svg" alt="" class="logo wow animate__tada" />
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <h3 class="header-title">خريطة الموقع</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li class="wow animate__fadeInRight" data-wow-delay="0">
+                                    <a href="index.html"> الرئيسية </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                                    <a href="aboutUs.html"> من نحن </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                                    <a href="services.html"> الخدمات </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".8s">
+                                    <a href="education.html"> البرامج التعليمية </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay="1s">
+                                    <a href="contactUs.html"> تواصل معنا </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                                    <a href="gallery.html"> المعرض </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+                                    <a href="blog.html"> المقالات </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                                    <a href="jobs.html"> الوظائف </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <h3 class="header-title">المساعدة</h3>
+                    <ul>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+                            <a href="privacyPolicy.html"> سياسة الخصوصية </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                            <a href="condition.html"> الشروط والأحكام </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay="0">
+                            <a href="question.html"> الأسئلة الشائعة </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                            <a href="login.html"> التسجيل </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-auto">
+                    <h3 class="header-title">معلومات التواصل</h3>
+                    <ul>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                            <a href="">
+                                البريد الإلكتروني
+                                <span>: mail@mail.com </span>
+                            </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay="0">
+                            <a href="tel:+966568565">
+                                المقر
+                                <span>: عنوان القمر يكتب هنا</span>
+                            </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay="0">
+                            <a href="tel:+966568565">
+                                رقم الجوال
+                                <span>: +9658547856</span>
+                            </a>
+                        </li>
+
+                        <li class="social mt-4 wow animate__fadeInRight" data-wow-delay=".4s">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- fancyBox script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- JS Coded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- nice select script -->
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- purecount -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"
+        integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/PureCounter.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
