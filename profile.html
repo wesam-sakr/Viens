@@ -38,7 +38,7 @@
 <body>
   <!-- ======= nav ======= -->
   <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar">
-    <div class="container">
+    <div class="container-fluid">
       <div class="d-flex align-items-center wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,12 +145,12 @@
 
   <!-- ======= breadcrumb ======= -->
   <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="nav-breadcrumb">
-    <div class="container">
+    <div class="container-fluid">
       <img class="ani ani-1" src="images//Topology-1.svg" alt="" />
       <img class="ani ani-2" src="images/Path 2568.svg" alt="" />
       <ol class="breadcrumb wow animate__fadeInLeft">
-        <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
-        <li class="breadcrumb-item active" aria-current="page">الملف الشخصي</li>
+        <li class="breadcrumb-item"><a href="index.html">الصفحة الرئيسية</a></li>
+        <li class="breadcrumb-item active" aria-current="page"></li>
       </ol>
     </div>
     <svg style="
@@ -163,8 +163,8 @@
     </svg>
   </nav>
   <section class="profile mt-5 pb-5">
-    <div class="container">
-      <div class="row mt-5 align-items-stretch">
+    <div class="container-fluid">
+      <div class="row gy-3 mt-5 align-items-stretch">
         <div class="col-lg-3">
           <div class="nav flex-column nav-pills">
             <div class="profile-pic-section">
@@ -185,21 +185,21 @@
               </div>
             </div>
 
-            <a href="" class="nav-link">
+            <a href="profile.html" class="nav-link active">
               المعلومات الشخصية</a>
-            <a href="" class="nav-link">
+            <a href="profile-apply.html" class="nav-link">
               طلبات التقديم</a>
-            <a href="" class="nav-link">
+            <a href="profile-chat.html" class="nav-link">
               المحادثات</a>
-            <a href="" class="nav-link ">
+            <a href="profile-fav.html" class="nav-link ">
               المفضلة</a>
             <a href="profile-cv.html" class="nav-link">
               السيرة الذاتية </a>
             <a href="profile-agent.html" class="nav-link ">
               الوكيل</a>
-            <a href="profile.html" class="nav-link active">
+            <a href="profile-receipt.html" class="nav-link">
               فواتيري</a>
-            <a href="profile-setting.html" class="nav-link ">
+            <a href="profile-setting.html" class="nav-link">
               الإعدادات</a>
             <a href="" class="text-center logout-link">
               <i class="bi bi-power"></i>
@@ -209,76 +209,464 @@
 
         <div class="col-lg-9">
           <div class="profile-data">
-            <div class="receipt">
-              <div class="current">
-                <h6>الفواتير الحالية</h6>
-                <div class="table-responsive">
-                  <table class="table m-0">
-                    <tbody>
-                      <tr>
-                        <td>
-                          برنامج الهندسة
-                        </td>
-                        <td>#14525</td>
-                        <td>25/5/2023</td>
-                        <td>في انتظار الدفع</td>
-                        <td>
-                          <a href="receipt-details.html" class="receipt-details-btn">
-                            تفاصيل الفاتورة
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="wizard card-like">
+              <form action="#">
+                <div class="wizard-header">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="steps text-center">
+                        <div class="wizard-step active">البيانات الشخصية</div>
+                        <div class="wizard-step">بيانات جواز السفر</div>
+                        <div class="wizard-step">الخبرات العملية</div>
+                        <div class="wizard-step">المؤهلات العلمية</div>
+                        <div class="wizard-step">المستندات</div>
+                        <div class="wizard-step">الفيديو التعريفي</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-    
-              <h6>الفواتير السابقة</h6>
-              <div class="table-responsive">
-                <table class="table m-0">
-                  <tbody>
-                    <tr>
-                      <td>
-                        برنامج الهندسة
-                      </td>
-                      <td>#14525</td>
-                      <td>25/5/2023</td>
-                      <td>في انتظار الدفع</td>
-                      <td>
-                        <a href="receipt-details.html" class="receipt-details-btn">
-                          تفاصيل الفاتورة
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        برنامج الهندسة
-                      </td>
-                      <td>#14525</td>
-                      <td>25/5/2023</td>
-                      <td>في انتظار الدفع</td>
-                      <td>
-                        <a href="receipt-details.html" class="receipt-details-btn">
-                          تفاصيل الفاتورة
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        برنامج الهندسة
-                      </td>
-                      <td>#14525</td>
-                      <td>25/5/2023</td>
-                      <td>في انتظار الدفع</td>
-                      <td>
-                        <a href="receipt-details.html" class="receipt-details-btn">
-                          تفاصيل الفاتورة
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                <div class="wizard-body">
+                  <div class="step initial active">
+                    <div class="row gy-3">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="firstname">الإسم الأول باللغة العربية</label>
+                          <input type="text" class="form-control" id="firstname">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="firstnameEn">الإسم الأول باللغة الانجليزية</label>
+                          <input type="text" class="form-control" id="firstnameEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="dadname">اسم الاب باللغة العربية</label>
+                          <input type="text" class="form-control" id="dadname">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="dadnameEn">اسم الاب باللغة الانجليزية</label>
+                          <input type="text" class="form-control" id="dadnameEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="grandname">اسم الجد باللغة العربية</label>
+                          <input type="text" class="form-control" id="grandname">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="grandnameEn">اسم الجد باللغة الانجليزية</label>
+                          <input type="text" class="form-control" id="grandnameEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="lastname">الإسم الأخير باللغة العربية</label>
+                          <input type="text" class="form-control" id="lastname">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="lastnameEn">الإسم الأخير باللغة الإنجليزية</label>
+                          <input type="text" class="form-control" id="lastnameEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="email">البريد الإلكتروني</label>
+                          <input type="email" class="form-control" id="email">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="BYD">تاريخ الميلاد</label>
+                          <input type="date" class="form-control" id="BYD">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="BYD_Country">دولة الميلاد</label>
+                          <select class="form-control form-select" id="BYD_Country">
+                            <option value=""></option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="BYD_City">مدينة الميلاد</label>
+                          <select class="form-control form-select" id="BYD_City">
+                            <option value=""></option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="nationality">الجنسية</label>
+                          <input type="date" class="form-control" id="nationality">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="sex">الجنس</label>
+                          <select class="form-control form-select" id="sex">
+                            <option value="">ذكر</option>
+                            <option value="">انثى</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label class="form-label" for="NativeLang">اللغة الأم</label>
+                          <select class="form-control form-select" id="NativeLang">
+                            <option value="">العربية</option>
+                            <option value="">الانجليزية</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="jobTitle">المسمى الوظيفي باللغة العربية</label>
+                          <input type="text" class="form-control" id="jobTitle">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="jobTitleEn">المسمى الوظيفي باللغة الإنجليزية</label>
+                          <input type="text" class="form-control" id="jobTitleEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="description">نبذة بسيطة باللغة العربية</label>
+                          <textarea type="text" class="form-control" id="description">
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="descriptionEn">نبذة بسيطة باللغة الانجليزية</label>
+                          <textarea type="text" class="form-control" id="descriptionEn">
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="address">العنوان الوطني باللغة العربية</label>
+                          <input type="text" class="form-control" id="address">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="addressEn"> العنوان الوطني  باللغة الإنجليزية</label>
+                          <input type="text" class="form-control" id="addressEn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="row gy-3">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passport">جواز سفر، هوية، إقامة ؟</label>
+                          <select class="form-control form-select" id="passport">
+                            <option value="">هوية</option>
+                            <option value="">اقامة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportNum">رقم جواز السفر</label>
+                          <input type="number" class="form-control" id="passportNum">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportName">الإسم كما في جواز السفر باللغة العربية</label>
+                          <input type="text" class="form-control" id="passportName">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportNameEn">الإسم كما في جواز السفر باللغة الانجليزية</label>
+                          <input type="text" class="form-control" id="passportNameEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportCity">مدينة جواز السفر</label>
+                          <select class="form-control form-select" id="passportCity">
+                            <option value="">القاهرة</option>
+                            <option value="">اسكندرية</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportCountry">دولة إصدار جواز السفر</label>
+                          <select class="form-control form-select" id="passportCountry">
+                            <option value="">مصر</option>
+                            <option value="">السعودية</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportCD">تاريخ إنشاء جواز السفر</label>
+                          <input type="date" class="form-control" id="passportNameCD">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="passportEXD">تاريخ انتهاء جواز السفر</label>
+                          <input type="date" class="form-control" id="passportNameEXD">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="experiance">
+                      <div class="date">
+                        <div>21-2-2021</div>
+                        <div>حتى الآن</div>
+                      </div>
+                      <div class="experiance-title">
+                        <h5>اسم الشركة يكتب هنا</h5>
+                        <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                      </div>
+                      <div class="exp-decription">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي</p>
+                      </div>
+                    </div>
+                    <div class="experiance">
+                      <div class="date">
+                        <div>21-2-2021</div>
+                        <div>حتى الآن</div>
+                      </div>
+                      <div class="experiance-title">
+                        <h5>اسم الشركة يكتب هنا</h5>
+                        <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                      </div>
+                      <div class="exp-decription">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي</p>
+                      </div>
+                    </div>
+                    <div class="experiance">
+                      <div class="date">
+                        <div>21-2-2021</div>
+                        <div>حتى الآن</div>
+                      </div>
+                      <div class="experiance-title">
+                        <h5>اسم الشركة يكتب هنا</h5>
+                        <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                      </div>
+                      <div class="exp-decription">
+                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي</p>
+                      </div>
+                    </div>
+                    <button class="main-btn w-auto px-5 py-1 mt-5" data-bs-target="#experianceModal" data-bs-toggle="modal">
+                      <i class="bi bi-plus fs-4"></i>
+                    </button>
+                  </div>
+                  <div class="step">
+                    <div class="row gy-3">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalName">الجهة التعليمية باللغة العربية</label>
+                          <input type="text" class="form-control" id="EducationalName">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalNameEn">الجهة التعليمية باللغة الإنجليزية</label>
+                          <input type="text" class="form-control" id="EducationalNameEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="Specialization">التخصص باللغة العربية</label>
+                          <input type="text" class="form-control" id="Specialization">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="SpecializationEn">التخصص باللغة الإنجليزية</label>
+                          <input type="text" class="form-control" id="SpecializationEn">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="Degree">الدرجة العلمية</label>
+                          <input type="text" class="form-control" id="Degree">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="GradDate">تاريخ التخرج</label>
+                          <input type="date" class="form-control" id="GradDate">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalDesc">نبذة بسيطة باللغة العربية</label>
+                          <textarea type="text" class="form-control" id="EducationalDesc">
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalDescEn">نبذة بسيطة باللغة الانجليزية</label>
+                          <textarea type="text" class="form-control" id="EducationalDescEn">
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalCountry">دولة الشهادة</label>
+                          <select class="form-control form-select" id="EducationalCountry">
+                            <option value="">مصر</option>
+                            <option value="">السعودية</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalCity">مدينة المنظمة</label>
+                          <select class="form-control form-select" id="EducationalCity">
+                            <option value="">القاهرة</option>
+                            <option value="">اسكندرية</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalCD">بداية الدراسة</label>
+                          <input type="date" class="form-control" id="EducationaCD">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label" for="EducationalLevel">المستوى الدراسي</label>
+                          <input type="text" class="form-control" id="EducationalLevel">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="main-btn w-auto px-5 py-1 mt-5" data-bs-target="#QualificationsModal" data-bs-toggle="modal">
+                      <i class="bi bi-plus fs-4"></i>
+                    </button>
+                  </div>
+                  <div class="step">
+                    <div class="row gy-3">
+                      <div class="col-lg-12">
+                        <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد JPG</label>
+                        <div class="file-input form-control">
+                          <input type="file" id="" accept=".jpg">
+                          <span class="button">
+                            <i class="bi bi-paperclip"></i>
+                          </span>
+                          <span class="label" data-js-label="">
+                            قم بالشد والإفلات أو حمل الصورة من جهازك
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد JPG</label>
+                        <div class="file-input form-control">
+                          <input type="file" id="" accept=".jpg">
+                          <span class="button">
+                            <i class="bi bi-paperclip"></i>
+                          </span>
+                          <span class="label" data-js-label="">
+                            قم بالشد والإفلات أو حمل الصورة من جهازك
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد JPG</label>
+                        <div class="file-input form-control">
+                          <input type="file" id="" accept=".jpg">
+                          <span class="button">
+                            <i class="bi bi-paperclip"></i>
+                          </span>
+                          <span class="label" data-js-label="">
+                            قم بالشد والإفلات أو حمل الصورة من جهازك
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد JPG</label>
+                        <div class="file-input form-control">
+                          <input type="file" id="" accept=".jpg">
+                          <span class="button">
+                            <i class="bi bi-paperclip"></i>
+                          </span>
+                          <span class="label" data-js-label="">
+                            قم بالشد والإفلات أو حمل الصورة من جهازك
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <!-- if no video found -->
+                    <div class="form-group">
+                      <label for="" class="col-form-label">
+                        اضف الفيديو التعريفي
+                      </label>
+                      <div class="file-input form-control">
+                        <input type="file" id="" accept=".mp4">
+                        <span class="button">
+                          <i class="bi bi-paperclip"></i>
+                        </span>
+                        <span class="label" data-js-label="">
+                          قم بالشد والإفلات أو حمل الفيديو من جهازك
+                        </span>
+                      </div>
+                    </div>
+                    <!-- else -->
+                    <div class="header-video">
+                      <div class="video-wrap h-100">
+                        <img src="images/header.png" alt="" class="video-cover-img" class="w-100">
+                        <video class="video" width="100%" height="100%">
+                          <source src="images/vid.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="play-icon">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                      <div class="pause-icon d-none">
+                        <i class="fa-solid fa-pause"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wizard-footer">
+                  <div class="row">
+                    <div id="wizard-prev" style="display:none" class="col-6 pull-left block-center">
+                      <button type="button" class="edu-link fw-bold fs-5">
+                        <i class="bi bi-chevron-double-right"></i>
+                        السابق
+                      </button>
+                    </div>
+                    <div id="wizard-next" class="col-6 pull-right text-center">
+                      <button type="button" class="edu-link fw-bold fs-5">
+                        التالي
+                        <i class="bi bi-chevron-double-left"></i>
+                      </button>
+                    </div>
+                    <div id="wizard-subm" style="display:none" class="col-6 pull-right block-center">
+                      <button type="button" class="main-btn">
+                        حفظ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -286,10 +674,9 @@
 
     </div>
   </section>
-  
   <!-- ======= footer ======= -->
   <footer class="py-5">
-    <div class="container">
+    <div class="container-fluid">
       <div class="text-center">
         <img src="images/viens.svg" alt="" class="logo wow animate__tada" />
       </div>
@@ -386,6 +773,146 @@
       </div>
     </div>
   </footer>
+
+  <!-- experiance modal -->
+  <div class="modal fade" id="experianceModal" tabindex="-1" aria-labelledby="experianceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content py-4 px-5">
+        <div class="modal-header border-0">
+          <h1 class="modal-title m-auto fs-5" id="experianceModalLabel">إضافة خبرة عملية</h1>
+          <button type="button" class="m-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">جهة العمل باللغة العربية</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">جهة العمل باللغة الإنجليزية</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">المسمى الوظيفي باللغة العربية</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">المسمى الوظيفي باللغة الإنجليزية</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">تاريخ الإلتحاق</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">تاريخ المغادرة</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="message-text-ar" class="col-form-label">وصف بسيط باللغة العربية</label>
+                  <textarea class="form-control" id="message-text-ar"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="message-text-en" class="col-form-label">وصف بسيط باللغة الإنجليزية</label>
+                  <textarea class="form-control" id="message-text-en"></textarea>
+                </div>
+              </div>
+              <div class="col-6">
+                <button type="button" class="main-btn">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Qualifications modal -->
+  <div class="modal fade" id="QualificationsModal" tabindex="-1" aria-labelledby="QualificationsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content py-4 px-5">
+        <div class="modal-header border-0">
+          <h1 class="modal-title m-auto fs-5" id="QualificationsModalLabel">إضافة مؤهل علمي</h1>
+          <button type="button" class="m-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row gy-3 justify-content-center">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="EducationalName">الجهة التعليمية باللغة العربية</label>
+                  <input type="text" class="form-control" id="EducationalName">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="EducationalNameEn">الجهة التعليمية باللغة الإنجليزية</label>
+                  <input type="text" class="form-control" id="EducationalNameEn">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="Specialization">التخصص باللغة العربية</label>
+                  <input type="text" class="form-control" id="Specialization">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="SpecializationEn">التخصص باللغة الإنجليزية</label>
+                  <input type="text" class="form-control" id="SpecializationEn">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="Degree">الدرجة العلمية</label>
+                  <input type="text" class="form-control" id="Degree">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="GradDate">تاريخ التخرج</label>
+                  <input type="date" class="form-control" id="GradDate">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="EducationalDesc">نبذة بسيطة باللغة العربية</label>
+                  <textarea type="text" class="form-control" id="EducationalDesc">
+                  </textarea>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label" for="EducationalDescEn">نبذة بسيطة باللغة الانجليزية</label>
+                  <textarea type="text" class="form-control" id="EducationalDescEn">
+                  </textarea>
+                </div>
+              </div>
+              <div class="col-6">
+                <button type="button" class="main-btn">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"

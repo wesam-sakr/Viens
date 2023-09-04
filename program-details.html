@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viens</title>
+    <link rel="shortcut icon" type="image/svg" href="images/viens.svg" />
+    <!-- bootstrapp-rtl -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- bootstrap-icon -->
+    <link rel="stylesheet" href="css/font_bootstrap-icons.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <!-- reteYo -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- owl carousel link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- animate link -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AR Style -->
+    <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
+    <!-- bootstrap-ltr -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <!-- ======= nav ======= -->
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <a class="navbar-brand m-0" href="index.html"><img src="images/viens.svg" alt=""></a>
+            </div>
+
+            <div class="nav-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 wow animate__backInDown">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutUs.html" class="nav-link">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="edu-programs.html" class="nav-link active">الجامعات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactUs.html" class="nav-link">تواصل معنا </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proxies.html">الوكلاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="jobs.html" class="nav-link">الوظائف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="askToJion.html" class="nav-link">طلب الانضمام كشريك</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="option text-dark wow animate__backInLeft" style="flex-direction: row !important;"
+                data-wow-duration="2s" data-wow-delay=".5s">
+                <!-- if auth -->
+                <li id="notif" class="has-menu auth">
+                    <a role="button" class="option-link">
+                        <i class="bi bi-bell"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="notifi-wrapper">
+                            <div class="notifi new">
+                                <a class="link" href="notifi.html"></a>
+                                <span class="dot"></span>
+                                <div class="notifi-img">
+                                    <img src="images/viens.svg" alt="">
+                                </div>
+                                <p class="cut-text">
+                                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                                    النصوص النهائية
+                                </p>
+                                <p class="date mb-0">22/01/2022</p>
+                            </div>
+                            <div class="notifi">
+                                <a class="link" href="notifi.html"></a>
+                                <span class="dot"></span>
+                                <div class="notifi-img">
+                                    <img src="images/viens.svg" alt="">
+                                </div>
+                                <p class="cut-text">
+                                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                                    النصوص النهائية
+                                </p>
+                                <p class="date mb-0">22/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="count">1</span>
+                </li>
+                <li class="">
+                    <a href="profile.html" class="option-link">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+                <!-- else -->
+                <li>
+                    <a href="login.html" class="option-link">
+                        <i class="bi bi-box-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="lang">
+                    <a href="" class="option-link">
+                        <span>English</span>
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:0137897687" class="option-link">
+                        <i class="bi bi-telephone-outbound"></i>
+                    </a>
+                </li>
+                <li>
+                    <button class="option-link">
+                        <i class="bi bi-brightness-alt-high-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======= breadcrumb ======= -->
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="nav-breadcrumb">
+        <div class="container-fluid">
+            <img class="ani ani-1" src="images//Topology-1.svg" alt="" />
+            <img class="ani ani-2" src="images/Path 2568.svg" alt="" />
+            <ol class="breadcrumb wow animate__fadeInLeft">
+                <li class="breadcrumb-item"><a href="index.html">الصفحة الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">البرامج التعليمية</li>
+            </ol>
+        </div>
+        <svg style="
+      position: absolute;
+      bottom: -205px;
+      z-index: -1;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#13518d" fill-opacity="1"
+                d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+            </path>
+        </svg>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="edu-gallery">
+            <div class="item">
+                <a data-fancybox="gallery" href="images/edu-img.png">
+                    <img src="images/edu-img.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-fancybox="gallery" href="images/edu-img.png">
+                    <img src="images/edu-img.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-fancybox="gallery" href="images/edu-img.png">
+                    <img src="images/edu-img.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="uni-header">
+            <div class="uni-name">
+                <h4>جامعة اسطنبول اوكان</h4>
+                <img src="images/ln.svg" alt="">
+            </div>
+            <div class="uni-info">
+                <div class="uni-location">
+                    <h6>مقر الجامعة</h6>
+                    <p>اسطنبول / الجانب الآسيوي</p>
+                </div>
+                <div class="uni-website">
+                    <h6>الموقع الرسمي</h6>
+                    <a href="okan.edu.tr/en">okan.edu.tr/en</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="edu-nav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#aboutUni" class="nav-link active">نبذه عن الجامعة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#uniVision" class="nav-link">رؤية الجامعة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#uniMission" class="nav-link">مهمة الجامعة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#uniHousing" class="nav-link">السكن الطلابى</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#uniPrograms" class="nav-link">برامج الجامعة</a>
+                        </li class="nav-item">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="edu-content">
+                    <div id="aboutUni">
+                        <h5>نبذة عن جامعة اسطنبول اوكان</h5>
+                        <p>تعد جامعة اسطنبول اوكان من أكثر الجامعات تطورًا في تركيا. تأسست الجامعة عام 1999م من قبل
+                            مؤسسة Okan للثقافة والتعليم والرياضة، بهدف دعم الطلاب ليصبحوا خريجين متميزين في التخصصات
+                            المختلفة، وإعداد العلماء المستقبليين القادرين على إثبات مهاراتهم وخبرتهم على المستوى النظري
+                            والعملي. تضم جامعة اسطنبول اوكان 10 كليات، تشمل مختلف التخصصات باللغتين الإنجليزية أو
+                            التركية، وحوالي 63 برنامج لطلاب البكالوريوس و41 برنامج للماجستير و13 برنامج للدكتوراه.
+                            بالإضافة إلى المدارس المهنية ومعاهد الدراسات العليا. كما تقدم الجامعة لطلابها فرص التبادل
+                            الطلابي في 400 مؤسسة مختلفة في جميع أنحاء العالم، حيث أنها من أفضل الجامعات التركية التي لها
+                            عضوية في شبكة تبادل الطلاب الدوليين.</p>
+                    </div>
+                    <div id="uniVision">
+                        <h5>رؤية الجامعة</h5>
+                        <p>
+                            تتمثل رؤية جامعة اسطنبول اوكان في أن تصبح جامعة عالمية المستوى تساهم في تطوير وإصلاح المجتمع
+                            من خلال توفير التعليم بأعلى المعايير وبالتالي يكون الطلاب على استعداد كامل لدخول عالم
+                            الأعمال الحديث
+                        </p>
+                    </div>
+                    <div id="uniMission">
+                        <h5>مهمة الجامعة</h5>
+                        <ul>
+                            <li>
+                                <p>تدريب الطلاب على التفكير بطريقة تحليلية علمية</p>
+                            </li>
+                            <li>
+                                <p>دمج التعليم النظري والتدريب العملي بإحترافية</p>
+                            </li>
+                            <li>
+                                <p>التركيز على الأنشطة التعليمية والبحثية الموجهة نحو تلبية احتياجات المجتمع من خلال جعل
+                                    المسؤولية الاجتماعية والوعي البيئي من أولويات الجامعة</p>
+                            </li>
+                            <li>
+                                <p>تحويل المعلومات إلى تكنولوجيا وفائدة اجتماعية</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="uniHousing">
+                        <h5>السكن الطلابى</h5>
+                        <p class="font-black">توفر الجامعة سكن طلابي للطلاب والطالبات، يشمل مختلف المرافق ومنها</p>
+                        <ul>
+                            <li>
+                                <p>غرف النوم وغرف الدراسة</p>
+                            </li>
+                            <li>
+                                <p>قاعة كبيرة لتناول الطعام</p>
+                            </li>
+                            <li>
+                                <p>كافتيريا</p>
+                            </li>
+                            <li>
+                                <p> بالإضافة إلى خدمات التنظيف وغسيل الملابس وفريق أمن يعمل على مدار 24 ساعة ونهارًا،
+                                    وعيادة طبية متخصصة</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="uniPrograms" class="edu-programs d-block">
+                        <h5>برامج الجامعة</h5>
+                        <div class="row w-100 g-3">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="edu">
+                                    <div class="edu-img">
+                                        <img src="images/edu.png" alt="">
+                                    </div>
+                                    <div class="edu-details">
+                                        <div class="edu-header">
+                                            <div>
+                                                <h6 class="category">اللغة الإنجليزية</h6>
+                                                <h6 class="fw-bold">بكالوريوس هندسة البرمجيات</h6>
+                                            </div>
+                                            <button class="save">
+                                                <i class="fa-regular fa-bookmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="edu-body">
+                                            <span class="price">4400$</span>
+                                            <del class="old-price">بدلًا من 5400$</del>
+                                        </div>
+                                        <div class="edu-footer">
+                                            <button class="main-btn my-0" data-bs-toggle="modal"
+                                                data-bs-target="#applyEduModal">التقديم</button>
+                                            <a href="program-details.html" class="edu-link my-0">تفاصيل البرنامج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="edu">
+                                    <div class="edu-img">
+                                        <img src="images/edu.png" alt="">
+                                    </div>
+                                    <div class="edu-details">
+                                        <div class="edu-header">
+                                            <div>
+                                                <h6 class="category">اللغة الإنجليزية</h6>
+                                                <h6 class="fw-bold">بكالوريوس هندسة البرمجيات</h6>
+                                            </div>
+                                            <button class="save">
+                                                <i class="fa-regular fa-bookmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="edu-body">
+                                            <span class="price">4400$</span>
+                                            <del class="old-price">بدلًا من 5400$</del>
+                                        </div>
+                                        <div class="edu-footer">
+                                            <button class="main-btn my-0" data-bs-toggle="modal"
+                                                data-bs-target="#applyEduModal">التقديم</button>
+                                            <a href="program-details.html" class="edu-link my-0">تفاصيل البرنامج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="edu">
+                                    <div class="edu-img">
+                                        <img src="images/edu.png" alt="">
+                                    </div>
+                                    <div class="edu-details">
+                                        <div class="edu-header">
+                                            <div>
+                                                <h6 class="category">اللغة الإنجليزية</h6>
+                                                <h6 class="fw-bold">بكالوريوس هندسة البرمجيات</h6>
+                                            </div>
+                                            <button class="save">
+                                                <i class="fa-regular fa-bookmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="edu-body">
+                                            <span class="price">4400$</span>
+                                            <del class="old-price">بدلًا من 5400$</del>
+                                        </div>
+                                        <div class="edu-footer">
+                                            <button class="main-btn my-0" data-bs-toggle="modal"
+                                                data-bs-target="#applyEduModal">التقديم</button>
+                                            <a href="program-details.html" class="edu-link my-0">تفاصيل البرنامج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="edu">
+                                    <div class="edu-img">
+                                        <img src="images/edu.png" alt="">
+                                    </div>
+                                    <div class="edu-details">
+                                        <div class="edu-header">
+                                            <div>
+                                                <h6 class="category">اللغة الإنجليزية</h6>
+                                                <h6 class="fw-bold">بكالوريوس هندسة البرمجيات</h6>
+                                            </div>
+                                            <button class="save">
+                                                <i class="fa-regular fa-bookmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="edu-body">
+                                            <span class="price">4400$</span>
+                                            <del class="old-price">بدلًا من 5400$</del>
+                                        </div>
+                                        <div class="edu-footer">
+                                            <button class="main-btn my-0" data-bs-toggle="modal"
+                                                data-bs-target="#applyEduModal">التقديم</button>
+                                            <a href="program-details.html" class="edu-link my-0">تفاصيل البرنامج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="edu">
+                                    <div class="edu-img">
+                                        <img src="images/edu.png" alt="">
+                                    </div>
+                                    <div class="edu-details">
+                                        <div class="edu-header">
+                                            <div>
+                                                <h6 class="category">اللغة الإنجليزية</h6>
+                                                <h6 class="fw-bold">بكالوريوس هندسة البرمجيات</h6>
+                                            </div>
+                                            <button class="save">
+                                                <i class="fa-regular fa-bookmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="edu-body">
+                                            <span class="price">4400$</span>
+                                            <del class="old-price">بدلًا من 5400$</del>
+                                        </div>
+                                        <div class="edu-footer">
+                                            <button class="main-btn my-0" data-bs-toggle="modal"
+                                                data-bs-target="#applyEduModal">التقديم</button>
+                                            <a href="program-details.html" class="edu-link my-0">تفاصيل البرنامج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="edu">
+                                    <div class="edu-img">
+                                        <img src="images/edu.png" alt="">
+                                    </div>
+                                    <div class="edu-details">
+                                        <div class="edu-header">
+                                            <div>
+                                                <h6 class="category">اللغة الإنجليزية</h6>
+                                                <h6 class="fw-bold">بكالوريوس هندسة البرمجيات</h6>
+                                            </div>
+                                            <button class="save">
+                                                <i class="fa-regular fa-bookmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="edu-body">
+                                            <span class="price">4400$</span>
+                                            <del class="old-price">بدلًا من 5400$</del>
+                                        </div>
+                                        <div class="edu-footer">
+                                            <button class="main-btn my-0" data-bs-toggle="modal"
+                                                data-bs-target="#applyEduModal">التقديم</button>
+                                            <a href="program-details.html" class="edu-link my-0">تفاصيل البرنامج</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= footer ======= -->
+    <footer class="py-5">
+        <div class="container-fluid">
+            <div class="text-center">
+                <img src="images/viens.svg" alt="" class="logo wow animate__tada" />
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <h3 class="header-title">خريطة الموقع</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li class="wow animate__fadeInRight" data-wow-delay="0">
+                                    <a href="index.html"> الرئيسية </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                                    <a href="aboutUs.html"> من نحن </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                                    <a href="services.html"> الخدمات </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".8s">
+                                    <a href="education.html"> البرامج التعليمية </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay="1s">
+                                    <a href="contactUs.html"> تواصل معنا </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                                    <a href="gallery.html"> المعرض </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+                                    <a href="blog.html"> المقالات </a>
+                                </li>
+                                <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                                    <a href="jobs.html"> الوظائف </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <h3 class="header-title">المساعدة</h3>
+                    <ul>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+                            <a href="privacyPolicy.html"> سياسة الخصوصية </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                            <a href="condition.html"> الشروط والأحكام </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay="0">
+                            <a href="question.html"> الأسئلة الشائعة </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                            <a href="login.html"> التسجيل </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-auto">
+                    <h3 class="header-title">معلومات التواصل</h3>
+                    <ul>
+                        <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                            <a href="">
+                                البريد الإلكتروني
+                                <span>: mail@mail.com </span>
+                            </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay="0">
+                            <a href="tel:+966568565">
+                                المقر
+                                <span>: عنوان القمر يكتب هنا</span>
+                            </a>
+                        </li>
+                        <li class="wow animate__fadeInRight" data-wow-delay="0">
+                            <a href="tel:+966568565">
+                                رقم الجوال
+                                <span>: +9658547856</span>
+                            </a>
+                        </li>
+
+                        <li class="social mt-4 wow animate__fadeInRight" data-wow-delay=".4s">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======= applyEduModal ======= -->
+    <div class="modal fade" id="applyEduModal" tabindex="-1" aria-labelledby="applyEduModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content py-4 px-5">
+                <div class="modal-header align-items-start border-0">
+                    <div>
+                        <img src="images/university.png" alt="" style="width: 80px;">
+                        <small>اسم الجامعة</small>
+                        <h1 class="modal-title fs-5" id="applyEduModalLabel">بكالوريوس هندسة البرمجيات</h1>
+
+                    </div>
+                    <button type="button" class="m-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="wizard card-like">
+                            <form action="#">
+                                <div class="wizard-header">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="steps text-center">
+                                                <div class="wizard-step active">البيانات الشخصية</div>
+                                                <div class="wizard-step">بيانات جواز السفر</div>
+                                                <div class="wizard-step">البيانات الأكاديمية</div>
+                                                <div class="wizard-step">المستندات</div>
+                                                <div class="wizard-step">مراجعة الطلب</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wizard-body">
+                                    <div class="step initial active">
+                                        <div class="row gy-3">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="firstname">الإسم الأول باللغة
+                                                        العربية</label>
+                                                    <input type="text" class="form-control" id="firstname">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="firstnameEn">الإسم الأول باللغة
+                                                        الانجليزية</label>
+                                                    <input type="text" class="form-control" id="firstnameEn">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="dadname">اسم الاب باللغة
+                                                        العربية</label>
+                                                    <input type="text" class="form-control" id="dadname">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="dadnameEn">اسم الاب باللغة
+                                                        الانجليزية</label>
+                                                    <input type="text" class="form-control" id="dadnameEn">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="grandname">اسم الجد باللغة
+                                                        العربية</label>
+                                                    <input type="text" class="form-control" id="grandname">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="grandnameEn">اسم الجد باللغة
+                                                        الانجليزية</label>
+                                                    <input type="text" class="form-control" id="grandnameEn">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="lastname">الإسم الأخير باللغة
+                                                        العربية</label>
+                                                    <input type="text" class="form-control" id="lastname">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="lastnameEn">الإسم الأخير باللغة
+                                                        الإنجليزية</label>
+                                                    <input type="text" class="form-control" id="lastnameEn">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="email">البريد الإلكتروني</label>
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="BYD">تاريخ الميلاد</label>
+                                                    <input type="date" class="form-control" id="BYD">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="BYD_Country">دولة الميلاد</label>
+                                                    <select class="form-control form-select" id="BYD_Country">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="BYD_City">مدينة الميلاد</label>
+                                                    <select class="form-control form-select" id="BYD_City">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="nationality">الجنسية</label>
+                                                    <input type="date" class="form-control" id="nationality">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="sex">الجنس</label>
+                                                    <select class="form-control form-select" id="sex">
+                                                        <option value="">ذكر</option>
+                                                        <option value="">انثى</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="NativeLang">اللغة الأم</label>
+                                                    <select class="form-control form-select" id="NativeLang">
+                                                        <option value="">العربية</option>
+                                                        <option value="">الانجليزية</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="jobTitle">المسمى الوظيفي باللغة
+                                                        العربية</label>
+                                                    <input type="text" class="form-control" id="jobTitle">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="jobTitleEn">المسمى الوظيفي باللغة
+                                                        الإنجليزية</label>
+                                                    <input type="text" class="form-control" id="jobTitleEn">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="description">نبذة بسيطة باللغة
+                                                        العربية</label>
+                                                    <textarea type="text" class="form-control" id="description">
+                          </textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="descriptionEn">نبذة بسيطة باللغة
+                                                        الانجليزية</label>
+                                                    <textarea type="text" class="form-control" id="descriptionEn">
+                          </textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="address">العنوان الوطني باللغة
+                                                        العربية</label>
+                                                    <input type="text" class="form-control" id="address">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="addressEn"> العنوان الوطني باللغة
+                                                        الإنجليزية</label>
+                                                    <input type="text" class="form-control" id="addressEn">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="row gy-3">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passport">جواز سفر، هوية، إقامة
+                                                        ؟</label>
+                                                    <select class="form-control form-select" id="passport">
+                                                        <option value="">هوية</option>
+                                                        <option value="">اقامة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportNum">رقم جواز السفر</label>
+                                                    <input type="number" class="form-control" id="passportNum">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportName">الإسم كما في جواز السفر
+                                                        باللغة العربية</label>
+                                                    <input type="text" class="form-control" id="passportName">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportNameEn">الإسم كما في جواز
+                                                        السفر باللغة الانجليزية</label>
+                                                    <input type="text" class="form-control" id="passportNameEn">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportCity">مدينة جواز
+                                                        السفر</label>
+                                                    <select class="form-control form-select" id="passportCity">
+                                                        <option value="">القاهرة</option>
+                                                        <option value="">اسكندرية</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportCountry">دولة إصدار جواز
+                                                        السفر</label>
+                                                    <select class="form-control form-select" id="passportCountry">
+                                                        <option value="">مصر</option>
+                                                        <option value="">السعودية</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportCD">تاريخ إنشاء جواز
+                                                        السفر</label>
+                                                    <input type="date" class="form-control" id="passportNameCD">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="passportEXD">تاريخ انتهاء جواز
+                                                        السفر</label>
+                                                    <input type="date" class="form-control" id="passportNameEXD">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="experiance">
+                                            <div class="date">
+                                                <div>21-2-2021</div>
+                                                <div>حتى الآن</div>
+                                            </div>
+                                            <div class="experiance-title">
+                                                <h5>اسم الشركة يكتب هنا</h5>
+                                                <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                                            </div>
+                                            <div class="exp-decription">
+                                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                                    القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في
+                                                    الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
+                                                    توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى
+                                                    نصي، هنا يوجد محتوى نصي</p>
+                                            </div>
+                                        </div>
+                                        <div class="experiance">
+                                            <div class="date">
+                                                <div>21-2-2021</div>
+                                                <div>حتى الآن</div>
+                                            </div>
+                                            <div class="experiance-title">
+                                                <h5>اسم الشركة يكتب هنا</h5>
+                                                <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                                            </div>
+                                            <div class="exp-decription">
+                                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                                    القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في
+                                                    الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
+                                                    توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى
+                                                    نصي، هنا يوجد محتوى نصي</p>
+                                            </div>
+                                        </div>
+                                        <div class="experiance">
+                                            <div class="date">
+                                                <div>21-2-2021</div>
+                                                <div>حتى الآن</div>
+                                            </div>
+                                            <div class="experiance-title">
+                                                <h5>اسم الشركة يكتب هنا</h5>
+                                                <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                                            </div>
+                                            <div class="exp-decription">
+                                                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                                                    القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في
+                                                    الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
+                                                    توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى
+                                                    نصي، هنا يوجد محتوى نصي</p>
+                                            </div>
+                                        </div>
+                                        <button class="main-btn w-auto px-5 py-1 mt-5" data-bs-target="#experianceModal"
+                                            data-bs-toggle="modal">
+                                            <i class="bi bi-plus fs-4"></i>
+                                        </button>
+                                    </div>
+                                    <div class="step">
+                                        <div class="row gy-3">
+                                            <div class="col-lg-12">
+                                                <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع
+                                                    صورة واضحة امتداد JPG</label>
+                                                <div class="file-input form-control">
+                                                    <input type="file" id="" accept=".jpg">
+                                                    <span class="button">
+                                                        <i class="bi bi-paperclip"></i>
+                                                    </span>
+                                                    <span class="label" data-js-label="">
+                                                        قم بالشد والإفلات أو حمل الصورة من جهازك
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع
+                                                    صورة واضحة امتداد JPG</label>
+                                                <div class="file-input form-control">
+                                                    <input type="file" id="" accept=".jpg">
+                                                    <span class="button">
+                                                        <i class="bi bi-paperclip"></i>
+                                                    </span>
+                                                    <span class="label" data-js-label="">
+                                                        قم بالشد والإفلات أو حمل الصورة من جهازك
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع
+                                                    صورة واضحة امتداد JPG</label>
+                                                <div class="file-input form-control">
+                                                    <input type="file" id="" accept=".jpg">
+                                                    <span class="button">
+                                                        <i class="bi bi-paperclip"></i>
+                                                    </span>
+                                                    <span class="label" data-js-label="">
+                                                        قم بالشد والإفلات أو حمل الصورة من جهازك
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع
+                                                    صورة واضحة امتداد JPG</label>
+                                                <div class="file-input form-control">
+                                                    <input type="file" id="" accept=".jpg">
+                                                    <span class="button">
+                                                        <i class="bi bi-paperclip"></i>
+                                                    </span>
+                                                    <span class="label" data-js-label="">
+                                                        قم بالشد والإفلات أو حمل الصورة من جهازك
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <img src="images/Successful purchase-cuate.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="wizard-footer">
+                                    <div class="row">
+                                        <div id="wizard-prev" style="display:none" class="col-6 pull-left block-center">
+                                            <button type="button" class="edu-link fw-bold fs-5">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                السابق
+                                            </button>
+                                        </div>
+                                        <div id="wizard-next" class="col-6 pull-right text-center">
+                                            <button type="button" class="edu-link fw-bold fs-5">
+                                                التالي
+                                                <i class="bi bi-chevron-double-left"></i>
+                                            </button>
+                                        </div>
+                                        <div id="wizard-subm" style="display:none"
+                                            class="col-6 pull-right block-center">
+                                            <button type="button" class="main-btn">
+                                                حفظ
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- fancyBox script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- JS Coded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- nice select script -->
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- purecount -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"
+        integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/PureCounter.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

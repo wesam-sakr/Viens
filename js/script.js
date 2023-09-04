@@ -25,6 +25,85 @@ $(document).ready(function () {
     $('.theme .bi').toggleClass('bi-brightness-alt-high-fill bi-cloud-moon')
   })
 
+  // add edu-programs to save
+  $('.save').click(function () {
+    $(this).find('i').toggleClass('fa-regular fa-solid')
+  })
+
+  // select edu-programs 
+  if ($('.edu-display').length > 0) {
+    const items = document.querySelectorAll('.edu-display button');
+    document.querySelector('.edu-display').addEventListener(
+      'click',
+      ({ target }) => {
+        for (const item of items) item.classList.toggle('active', target === item);
+        if ($('.edu-display button.fa-list-ul').hasClass('active')) {
+          $('.edu-programs').addClass('single')
+        }
+        else {
+          $('.edu-programs').removeClass('single')
+        }
+      }
+    );
+  }
+
+
+  // Get all sections that have an ID defined
+  const sections = document.querySelectorAll(".edu-content div[id]");
+
+  // Add an event listener listening for scroll
+  window.addEventListener("scroll", navHighlighter);
+
+  function navHighlighter() {
+
+    // Get current scroll position
+    let scrollY = window.scrollY;
+
+    // Now we loop through sections to get height, top and ID values for each
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 100;
+      sectionId = current.getAttribute("id");
+
+      /*
+      - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+      - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+      */
+      if (
+        scrollY > sectionTop &&
+        scrollY <= sectionTop + sectionHeight
+      ) {
+        document.querySelector(".edu-nav a[href*=" + sectionId + "]").classList.add("active");
+      } else {
+        document.querySelector(".edu-nav a[href*=" + sectionId + "]").classList.remove("active");
+      }
+    });
+  }
+
+  // var offsetTop = $('.edu-content').offset().top;
+  // var offsetbottom = ($(window).height() + $('.edu-content').height()) - ($('.edu-nav').height()/3);
+  // $(window).scroll(function() {
+  //   if($(this).scrollTop() >= offsetTop  && $(this).scrollTop() <= offsetbottom) {
+  //   $('.edu-nav').addClass('isFixed');
+  //   } else {
+  //     $('.edu-nav').removeClass('isFixed');
+  //   }
+  // });
+
+  if ($('.edu-content').length > 0) {
+    var offsetTop = $('.edu-content').offset().top;
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= offsetTop) {
+        $('.edu-nav').addClass('isFixed');
+        // $('html').addClass('whiteSpace');
+      } else {
+        $('.edu-nav').removeClass('isFixed');
+        // $('html').removeClass('whiteSpace');
+      }
+    });
+  }
+
+
   // change dir
   var bodyDir = $('body').css('direction')
   console.log(bodyDir)
@@ -119,23 +198,31 @@ $(document).ready(function () {
     $('.circle-cover').height(authWidth)
   })
 
-  // container-gap
-  var container = document.querySelector('.container')
+  // container-fluid-gap
+  var container = document.querySelector('.container-fluid')
   var containerWidth = container.offsetWidth;
   var screenWidth = $(window).width();
   let containerGap = (screenWidth - containerWidth) / 2
-  $('.container-gap').css({
-    'padding-left': containerGap
-  })
+  if ($(window).width() > 991.8){
+    $('.container-fluid-gap').css({
+      'padding-left': 16 + containerGap
+    })
+  }
+  else{
+    $('.container-fluid-gap').css({
+      'padding-left': 16 + containerGap ,
+      'padding-right': 16 + containerGap
+    })
+  }
 
   // center play video icon 
   var shapeWidth = $('.header-shape').width();
   var shapeHeight = $('.header-shape').height()
-  $('.play-icon').css({
+  $('.header-wrapper .play-icon').css({
     right: shapeWidth,
     top: shapeHeight / 2
   })
-  $('.pause-icon').css({
+  $('.header-wrapper .pause-icon').css({
     right: shapeWidth,
     top: shapeHeight / 2
   })
@@ -181,7 +268,7 @@ $(document).ready(function () {
   }
 
   // apply job upload cv
-  $('#file-input').change(function () {
+  $('.file-input').change(function () {
     const fileInput = $(this).find('[type="file"]')[0];
     const label = $(this).find('[data-js-label]')[0];
     console.log($(fileInput).val());
@@ -213,6 +300,105 @@ $(document).ready(function () {
     }
     $(this).toggleClass('active');
   });
+
+  // wizard
+  // Checking button status ( wether or not next/previous and
+  // submit should be displayed )
+  const checkButtons = (activeStep, stepsCount) => {
+    const prevBtn = $("#wizard-prev");
+    const nextBtn = $("#wizard-next");
+    const submBtn = $("#wizard-subm");
+
+    switch (activeStep / stepsCount) {
+      case 0: // First Step
+        prevBtn.hide();
+        submBtn.hide();
+        nextBtn.show();
+        break;
+      case 1: // Last Step
+        nextBtn.hide();
+        prevBtn.show();
+        submBtn.show();
+        break;
+      default:
+        submBtn.hide();
+        prevBtn.show();
+        nextBtn.show();
+    }
+  };
+
+  // Scrolling the form to the middle of the screen if the form
+  // is taller than the viewHeight
+  const scrollWindow = (activeStepHeight, viewHeight) => {
+    if (viewHeight < activeStepHeight) {
+      $(window).scrollTop($(steps[activeStep]).offset().top - viewHeight / 2);
+    }
+  };
+
+  // Setting the wizard body height, this is needed because
+  // the steps inside of the body have position: absolute
+  const setWizardHeight = activeStepHeight => {
+    $(".wizard-body").height(activeStepHeight);
+  };
+
+  $(function () {
+    // Form step counter (little cirecles at the top of the form)
+    const wizardSteps = $(".wizard-header .wizard-step");
+    // Form steps (actual steps)
+    const steps = $(".wizard-body .step");
+    // Number of steps (counting from 0)
+    const stepsCount = steps.length - 1;
+    // Screen Height
+    const viewHeight = $(window).height();
+    // Current step being shown (counting from 0)
+    let activeStep = 0;
+    // Height of the current step
+    let activeStepHeight = $(steps[activeStep]).height();
+
+    checkButtons(activeStep, stepsCount);
+    setWizardHeight(activeStepHeight);
+
+    // Resizing wizard body when the viewport changes
+    $(window).resize(function () {
+      setWizardHeight($(steps[activeStep]).height());
+    });
+
+    // Previous button handler
+    $("#wizard-prev").click(() => {
+      // Sliding out current step
+      $(steps[activeStep]).removeClass("active");
+      $(wizardSteps[activeStep]).removeClass("active");
+
+      activeStep--;
+
+      // Sliding in previous Step
+      $(steps[activeStep]).removeClass("off").addClass("active");
+      $(wizardSteps[activeStep]).addClass("active");
+
+      activeStepHeight = $(steps[activeStep]).height();
+      setWizardHeight(activeStepHeight);
+      checkButtons(activeStep, stepsCount);
+    });
+
+    // Next button handler
+    $("#wizard-next").click(() => {
+      // Sliding out current step
+      $(steps[activeStep]).removeClass("inital").addClass("off").removeClass("active");
+      $(wizardSteps[activeStep]).removeClass("active");
+
+      // Next step
+      activeStep++;
+
+      // Sliding in next step
+      $(steps[activeStep]).addClass("active");
+      $(wizardSteps[activeStep]).addClass("active");
+
+      activeStepHeight = $(steps[activeStep]).height();
+      setWizardHeight(activeStepHeight);
+      checkButtons(activeStep, stepsCount);
+    });
+  });
+
 
   // owl-carousel
   $('.partners-slider .owl-carousel').owlCarousel({
@@ -321,7 +507,7 @@ $(document).ready(function () {
   });
 
   // niceSelect
-  $('select').niceSelect();
+  // $('select').niceSelect();
 
   // wow.js init
   new WOW().init();

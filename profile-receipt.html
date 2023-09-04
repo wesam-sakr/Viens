@@ -150,7 +150,7 @@
       <img class="ani ani-2" src="images/Path 2568.svg" alt="" />
       <ol class="breadcrumb wow animate__fadeInLeft">
         <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
-        <li class="breadcrumb-item active" aria-current="page">الفاتورة</li>
+        <li class="breadcrumb-item active" aria-current="page">الملف الشخصي</li>
       </ol>
     </div>
     <svg style="
@@ -162,119 +162,118 @@
       </path>
     </svg>
   </nav>
-  <section class="receipt-details">
-    <h5 class="rec-title">
-      <span>
-        تفاصيل الفاتورة
-      </span>
-    </h5>
+  <section class="profile mt-5 pb-5">
     <div class="container-fluid">
-      <img class="logo" src="images/viens.svg" alt="">
-      <div class="agent-data">
-        <div class="row gy-3">
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>اسم الوكيل</span>
-            <span>: اسم الوكيل يكتب هنا</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>العنوان</span>
-            <span>: عنوان يكتب هنا</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>رقم التواصل</span>
-            <span>: +966327898</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>رقم الفاتورة</span>
-            <span>: #11456</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>تاريخ الفاتورة</span>
-            <span>: 14/5/2023</span>
-          </div>
-        </div>
-      </div>
-      <div class="user-data">
-        <div class="row gy-3">
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>اسم الطالب</span>
-            <span>: اسم الطالب يكتب هنا</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>العنوان</span>
-            <span>: العنوان يكتب هنا</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span>رقم التواصل</span>
-            <span>: +966327898</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span> البريد الالكتروني</span>
-            <span>: mail@mail.com</span>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <span> الرقم المرجعي</span>
-            <span>: 123456</span>
-          </div>
-        </div>
-      </div>
-      <div class="summary-wrapper">
-        <div class="university mt-5">
-          <div class="row gy-3 align-items-center">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="uni-data">
-                <img class="uni-img" src="images/university.png" alt="">
-                <h5 class="uni-name">اسم الجامعه</h5>
-                <p class="degree">بكالوريوس هندسة البرمجيات</p>
+      <div class="row mt-5 align-items-stretch">
+        <div class="col-lg-3">
+          <div class="nav flex-column nav-pills">
+            <div class="profile-pic-section">
+              <div class="profile-pic position-relative">
+                <img class="" src="images/writer2.jpg" alt="" id="photo">
+                <i class="bi bi-camera"></i>
+                <input type="file" id="file" accept="images/*">
+                <label for="file" id="uploadBtn">
+                  <div class="profile-pic-icon">
+                  </div>
+                </label>
+              </div>
+              <div class="text-center">
+                <h5 class="fw-bold fs-6">
+                  اسم المستخدم
+                </h5>
+                <output name="" style="color: #909090;">Mail22@mail.com</output>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-8">
+
+            <a href="profile.html" class="nav-link">
+              المعلومات الشخصية</a>
+            <a href="profile-apply.html" class="nav-link">
+              طلبات التقديم</a>
+            <a href="profile-chat.html" class="nav-link">
+              المحادثات</a>
+            <a href="profile-fav.html" class="nav-link ">
+              المفضلة</a>
+            <a href="profile-cv.html" class="nav-link">
+              السيرة الذاتية </a>
+            <a href="profile-agent.html" class="nav-link ">
+              الوكيل</a>
+            <a href="profile-receipt.html" class="nav-link active">
+              فواتيري</a>
+            <a href="profile-setting.html" class="nav-link">
+              الإعدادات</a>
+            <a href="" class="text-center logout-link">
+              <i class="bi bi-power"></i>
+              تسجيل الخروج</a>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="profile-data">
+            <div class="receipt">
+              <div class="current">
+                <h6>الفواتير الحالية</h6>
+                <div class="table-responsive">
+                  <table class="table m-0">
+                    <tbody>
+                      <tr>
+                        <td>
+                          برنامج الهندسة
+                        </td>
+                        <td>#14525</td>
+                        <td>25/5/2023</td>
+                        <td>في انتظار الدفع</td>
+                        <td>
+                          <a href="receipt-details.html" class="receipt-details-btn">
+                            تفاصيل الفاتورة
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+    
+              <h6>الفواتير السابقة</h6>
               <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <th>
-                      الرسوم
-                    </th>
-                    <th>
-                      المبلغ
-                    </th>
-                  </thead>
+                <table class="table m-0">
                   <tbody>
                     <tr>
                       <td>
-                        رسوم التقديم
+                        برنامج الهندسة
                       </td>
+                      <td>#14525</td>
+                      <td>25/5/2023</td>
+                      <td>في انتظار الدفع</td>
                       <td>
-                        110 ريال
+                        <a href="receipt-details.html" class="receipt-details-btn">
+                          تفاصيل الفاتورة
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        رسوم القبول
+                        برنامج الهندسة
                       </td>
+                      <td>#14525</td>
+                      <td>25/5/2023</td>
+                      <td>في انتظار الدفع</td>
                       <td>
-                        110 ريال
+                        <a href="receipt-details.html" class="receipt-details-btn">
+                          تفاصيل الفاتورة
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        رسوم مطبقة
+                        برنامج الهندسة
                       </td>
+                      <td>#14525</td>
+                      <td>25/5/2023</td>
+                      <td>في انتظار الدفع</td>
                       <td>
-                        110 ريال
-                      </td>
-                    </tr>
-                    <tr class="total">
-                      <td>
-                         الاجمالي
-                      </td>
-                      <td>
-                        330 ريال
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                        <button class="buy-now" data-bs-target="#receiptModal" data-bs-toggle="modal">دفع</button>
+                        <a href="receipt-details.html" class="receipt-details-btn">
+                          تفاصيل الفاتورة
+                        </a>
                       </td>
                     </tr>
                   </tbody>
@@ -284,8 +283,10 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
+  
   <!-- ======= footer ======= -->
   <footer class="py-5">
     <div class="container-fluid">
@@ -385,39 +386,6 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- modals -->
-
-  <div class="modal fade" id="receiptModal" tabindex="-1" aria-labelledby="receiptModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="success">
-            <h5 class="title">نُهنئك تم الدفع بنجاح</h5>
-            <img class="w-50" src="images/Plain credit card-pana.png" alt="">
-            <div class="row justify-content-center">
-              <div class="col-6 col-lg-4">
-                <button type="button" class="main-btn-outline" data-bs-dismiss="modal">اغلاق</button>
-              </div>
-              <div class="col-6 col-lg-4">
-                <a class="main-btn" href="index.html">الرجوع للرئيسية </a>
-              </div>
-            </div>
-          </div>
-          <div class="d-none failed">
-            <h5 class="title">حدث خطأ أثناء الدفع أعد المحاولة</h5>
-            <img class="w-50" src="images/Successful purchase-cuate.png" alt="">
-            <div class="row justify-content-center">
-              <div class="col-6">
-                <button type="button" class="main-btn" data-bs-dismiss="modal">اعد المحاولة</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
