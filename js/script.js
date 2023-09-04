@@ -30,6 +30,12 @@ $(document).ready(function () {
     $(this).find('i').toggleClass('fa-regular fa-solid')
   })
 
+  // chat responsive
+  $('.op-pro-filter').click(function () {
+    $(this).toggleClass('open');
+    $('.friends ').slideToggle();
+  });
+
   // select edu-programs 
   if ($('.edu-display').length > 0) {
     const items = document.querySelectorAll('.edu-display button');

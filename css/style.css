@@ -599,6 +599,15 @@ section {
   margin-right: 0;
 }
 
+/* askToJoin page */
+.askToJoin .form-control{
+  background: #FBFBFB 0% 0% no-repeat padding-box;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .5rem 0;
+}
+
 
 /* about page */
 .aboutUs .title {
@@ -1582,6 +1591,10 @@ section {
   background: var(--second-color);
   color: #fff;
 }
+.agent{
+  position: relative;
+  margin-bottom: 1rem
+}
 
 .nav .nav-link.active .icon svg.aboutA path,
 .nav .nav-link.active .icon svg.cat path,
@@ -1699,6 +1712,12 @@ section {
 }
 
 @media (max-width: 991.8px) {
+  .chat-box .friends{
+    max-height: 300px ;
+    margin: 0;
+    display: none;
+  }
+
   .agent-page .agent-nav {
     border-radius: 38px;
   }
@@ -2603,6 +2622,43 @@ section {
 }
 .chat-box{
   height: 596px;
+}
+
+.chat-box .op-pro-filter {
+  float: left;
+  width: 100%;
+  text-align: inherit;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 20px;
+  display: none;
+  position: relative;
+}
+.chat-box .op-pro-filter:after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  border-right: 2px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
+  width: 10px;
+  height: 10px;
+  transform: rotate(135deg);
+  transition: all .3s;
+  top: 15px;
+}
+.op-pro-filter.open:after {
+  transform: rotate(315deg);
+  transition: all .3s;
+  top: 20px;
+}
+@media (max-width: 992px){
+  .chat-box .op-pro-filter {
+    display: block;
+  }
 }
 .chat-box .chat-wrapper{
   height: 100%;
