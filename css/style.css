@@ -3281,7 +3281,7 @@ body.nav-open {
   color: var(--main-color) !important;
 }
 
-.nav-collapse .nav-link:hover::before {
+.nav-collapse .nav-link:hover::before, .nav-collapse .nav-link.active::before {
   transform: scaleY(1);
   -webkit-transition: .25s;
   transition: .25s;
