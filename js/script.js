@@ -20,6 +20,12 @@ $(document).ready(function () {
     $('body').toggleClass('nav-open')
   })
 
+  // resize-chat
+  $('.resize-chat').click(function () {
+    $('.resize-chat i').toggleClass('fa-arrow-left-long fa-arrow-right-long')
+    $('.chat-box').toggleClass('resize' , 500)
+  })
+
   // toggle theme
   $('.theme').click(function () {
     $('.theme .bi').toggleClass('bi-brightness-alt-high-fill bi-cloud-moon')
@@ -68,8 +74,9 @@ $(document).ready(function () {
     // Now we loop through sections to get height, top and ID values for each
     sections.forEach(current => {
       const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 50;
-      sectionId = current.getAttribute("id");
+      const sectionTop = current.offsetTop + 50;
+      var sectionId = current.getAttribute("id");
+      console.log(sectionId);
 
       /*
       - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
@@ -89,7 +96,7 @@ $(document).ready(function () {
   // var offsetTop = $('.edu-content').offset().top;
   // var offsetbottom = ($(window).height() + $('.edu-content').height()) - ($('.edu-nav').height()/3);
   // $(window).scroll(function() {
-  //   if($(this).scrollTop() >= offsetTop  && $(this).scrollTop() <= offsetbottom) {
+  //   if ($(this).scrollTop() >= offsetTop  && $(this).scrollTop() <= 2300) {
   //   $('.edu-nav').addClass('isFixed');
   //   } else {
   //     $('.edu-nav').removeClass('isFixed');
@@ -99,7 +106,7 @@ $(document).ready(function () {
   if ($('.edu-content').length > 0) {
     var offsetTop = $('.edu-content').offset().top;
     $(window).scroll(function () {
-      if ($(this).scrollTop() >= offsetTop  && $(this).scrollTop() <= 2300) {
+      if ($(this).scrollTop() >= offsetTop) {
         $('.edu-nav').addClass('isFixed');
       } else {
         $('.edu-nav').removeClass('isFixed');
@@ -203,21 +210,21 @@ $(document).ready(function () {
   })
 
   // container-fluid-gap
-  var container = document.querySelector('.container-fluid')
-  var containerWidth = container.offsetWidth;
-  var screenWidth = $(window).width();
-  let containerGap = (screenWidth - containerWidth) / 2
-  if ($(window).width() > 991.8){
-    $('.container-fluid-gap').css({
-      'padding-left': 16 + containerGap
-    })
-  }
-  else{
-    $('.container-fluid-gap').css({
-      'padding-left': 16 + containerGap ,
-      'padding-right': 16 + containerGap
-    })
-  }
+  // var container = document.querySelector('.container-fluid')
+  // var containerWidth = container.offsetWidth;
+  // var screenWidth = $(window).width();
+  // let containerGap = (screenWidth - containerWidth) / 2
+  // if ($(window).width() > 991.8){
+  //   $('.container-fluid-gap').css({
+  //     'padding-left': 32 + containerGap
+  //   })
+  // }
+  // else{
+  //   $('.container-fluid-gap').css({
+  //     'padding-left': 16 + containerGap ,
+  //     'padding-right': 16 + containerGap
+  //   })
+  // }
 
   // center play video icon 
   var shapeWidth = $('.header-shape').width();
