@@ -3346,6 +3346,9 @@ body.nav-open {
 .navbar .option li .option-link i {
   font-size: 18px;
 }
+.navbar .option li .option-link i::before {
+  line-height: 0;
+}
 
 .navbar .option li#audio {
   display: none;
