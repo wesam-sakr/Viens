@@ -209,18 +209,18 @@ $(document).ready(function () {
     $('.circle-cover').height(authWidth)
   })
 
-  // container-fluid-gap
-  // var container = document.querySelector('.container-fluid')
+  // container-gap
+  // var container = document.querySelector('.container')
   // var containerWidth = container.offsetWidth;
   // var screenWidth = $(window).width();
   // let containerGap = (screenWidth - containerWidth) / 2
   // if ($(window).width() > 991.8){
-  //   $('.container-fluid-gap').css({
+  //   $('.container-gap').css({
   //     'padding-left': 32 + containerGap
   //   })
   // }
   // else{
-  //   $('.container-fluid-gap').css({
+  //   $('.container-gap').css({
   //     'padding-left': 16 + containerGap ,
   //     'padding-right': 16 + containerGap
   //   })

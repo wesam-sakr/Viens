@@ -20,7 +20,7 @@ a{
   --white: #fff;
   --black: #000;
   --label: #727272;
-  --gutter: 4rem !important
+  --gutter: 6rem !important
 }
 
 p,
@@ -3396,6 +3396,7 @@ body.nav-open {
   border: 0;
   position: relative;
   z-index: 98;
+  padding-right: 0;
 }
 
 .navbar-toggler-icon {
