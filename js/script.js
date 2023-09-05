@@ -68,7 +68,7 @@ $(document).ready(function () {
     // Now we loop through sections to get height, top and ID values for each
     sections.forEach(current => {
       const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 100;
+      const sectionTop = current.offsetTop - 50;
       sectionId = current.getAttribute("id");
 
       /*
@@ -99,12 +99,10 @@ $(document).ready(function () {
   if ($('.edu-content').length > 0) {
     var offsetTop = $('.edu-content').offset().top;
     $(window).scroll(function () {
-      if ($(this).scrollTop() >= offsetTop) {
+      if ($(this).scrollTop() >= offsetTop  && $(this).scrollTop() <= 2300) {
         $('.edu-nav').addClass('isFixed');
-        // $('html').addClass('whiteSpace');
       } else {
         $('.edu-nav').removeClass('isFixed');
-        // $('html').removeClass('whiteSpace');
       }
     });
   }

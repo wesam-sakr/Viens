@@ -648,7 +648,7 @@ section {
 }
 
 .timeline ul {
-  padding: 30px 0;
+  padding: 30px;
   padding-bottom: 130px;
 }
 
@@ -793,7 +793,7 @@ section {
   font-weight: bold;
   margin: 1rem 0;
 }
-.filter .container .filter-wrapper .filter-btn {
+.filter .filter-wrapper .filter-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1999,10 +1999,12 @@ section {
   transition: none;
 } */
 .uni-header, .uni-info{
-  display: flex; 
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  row-gap: 5px;
   margin: 1rem 0;
 }
 .uni-header h4 {
@@ -2634,7 +2636,7 @@ section {
   border: 1px solid var(--main-color);
   border-radius: 10px;
   padding: 0.5rem 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: none;
   position: relative;
 }
@@ -3192,9 +3194,9 @@ body.nav-open {
 .navbar .sub-menu {
   position: absolute;
   top: 100%;
-  left: -50px;
-  max-width: 330px;
-  min-width: 290px;
+  right: -1rem;
+  max-width: 400px;
+  min-width: 350px;
   max-height: 300px;
   font-size: 12px;
   display: none;
@@ -3203,11 +3205,23 @@ body.nav-open {
   padding: 1rem;
 }
 
+
 .notifi-wrapper {
   overflow: hidden;
   box-shadow: 0px 0px 15px #00000029;
   border-radius: 10px;
   background: #fff;
+  padding: 1rem .5rem;
+}
+.notifi-wrapper .notifi.new{
+  border-radius: 10px;
+}
+
+#notif i:before{
+  transition: .4s;
+}
+#notif:hover i:before{
+  transform: rotate(360deg);
 }
 
 .navbar .auth.has-menu:hover .sub-menu {
@@ -4204,6 +4218,10 @@ footer .logo {
   margin-bottom: 35px;
 }
 
+/* .footer-nav{
+  display: none;
+} */
+
 footer .header-title {
   color: var(--main-color);
   font-weight: 600;
@@ -4605,7 +4623,7 @@ footer ul .social a {
 }
 
 @media (max-width: 767px) {
-  .navbar .container {
+  .navbar .container-fluid {
     gap: 0;
   }
 
@@ -4718,14 +4736,22 @@ footer ul .social a {
     border-radius: 20px;
   }
   .company-wrapper .company-data .company-img{
-    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(-20px , -50px);
+  }
+  .company-wrapper .company-data{
+    gap: 0;
+    flex-wrap: wrap
   }
   .company-wrapper .company-data .comp_info{
     width: 100%;
-    margin-top: 95px;
+    margin-top: -15px;
   }
   .company-wrapper .company-data .comp_info .follow{
-    transform: translate(0 , -80px);
+    top: 270px;
+    left: 1rem;
+    position: absolute;
   }
 
   .single-job.jobs .company-name {
@@ -4757,7 +4783,7 @@ footer ul .social a {
     bottom: -75px;
   }
 
-  .navbar .container {
+  .navbar .container-fluid {
     align-items: self-start;
     flex-direction: column-reverse;
     gap: 10px !important;
@@ -4771,12 +4797,19 @@ footer ul .social a {
 
   .navbar .option li .option-link {
     padding: 0;
-    width: 45px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .navbar .option li .option-link i{
+    font-size: 16px;
+  }
+  .breadcrumb {
+    padding-top: 1.5rem;
+}
 
   .lang span {
     display: none;
@@ -4785,13 +4818,21 @@ footer ul .social a {
   .receipt td {
     display: inline-block;
   }
+  .table-responsive.receipt td {
+    display: table-cell;
+    padding: .75rem;
+    font-size: 14px;
+  }
+  .table-responsive.receipt td button{
+    font-size: 14px;
+  }
 
   .sub-menu {
     left: auto !important;
   }
 
   .modal-dialog {
-    max-width: 80%;
+    max-width: 95%;
   }
 
   .single-proxies .nav-pills .nav-link.active .bi,
@@ -4857,33 +4898,17 @@ footer ul .social a {
   .jobs .job-wrapper .job-content .job-note{
     flex-grow: 1;
   }
-  /* ourBooks */
-  .ourBooks img.img-most {
-    height: 180px;
+  .wizard .wizard-header {
+    overflow: auto;
+  }
+  .wizard .wizard-header .steps{
+    width: max-content;
+  }
+}
+
+@media (max-width: 400px){
+  .nav-breadcrumb svg {
+    bottom: -67px !important;
   }
 
-  .ourBooks h5 {
-    font-size: 16px;
-  }
-
-  .Book_store .contain-store .texts p {
-    font-size: 16px;
-  }
-
-  .Book_store .contain-store .texts a {
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 2rem;
-    width: 185px;
-    height: unset;
-    padding: 10px 0;
-  }
-
-  .single_book_single .owl-nav {
-    bottom: -9.5%;
-    right: 50%;
-    transform: translateX(50%);
-  }
 }
