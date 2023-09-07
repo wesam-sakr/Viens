@@ -312,6 +312,20 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 
+  function userType() {
+    var selectedType = $('#userType :selected').val();
+    if (selectedType == 'educational'){
+      $('#op-university').show();
+      $('#op-phone').hide();
+    }
+    else{
+      $('#op-university').hide();
+      $('#op-phone').show();
+    }
+  }
+  userType()
+  $('#userType').change(userType)
+
   // wizard
   // Checking button status ( wether or not next/previous and
   // submit should be displayed )
