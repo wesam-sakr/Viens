@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viens</title>
+  <link rel="shortcut icon" type="image/svg" href="../../images/v.svg" />
+  <!-- bootstrapp-rtl -->
+  <link rel="stylesheet" href="../../css/bootstrap.rtl.min.css">
+  <!-- bootstrap-icon -->
+  <link rel="stylesheet" href="../../css/font_bootstrap-icons.min.css">
+  <!-- fontawesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fancyBox link  -->
+  <link rel="stylesheet" href="../../css/jquery.fancybox.min.css" />
+  <!-- reteYo link -->
+  <link rel="stylesheet" href="../../css/jquery.rateyo.min.css">
+  <!-- nice select link -->
+  <link rel="stylesheet" href="../../css/nice-select.css">
+  <!-- owl carousel link -->
+  <link rel="stylesheet" href="../../css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../../css/owl.theme.default.min.css" />
+  <!-- animate link -->
+  <link rel="stylesheet" href="../../css/animate.css">
+  <!-- custom style -->
+  <link rel="stylesheet" href="../../css/admin.css" />
+
+  <!-- EN Style -->
+  <!-- <link rel="stylesheet" href="../../css/adminltr.css" /> -->
+  <!-- bootstrap-ltr -->
+  <!-- <link rel="stylesheet" href="../../css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <img src="../../images/v.svg" alt="">
+      </div>
+      <button class="toggle-nav-btn">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="option">
+        <div class="search">
+          <i class="bi bi-search"></i>
+          <input readonly class="form-control" type="search" name="" id="" placeholder="بحث">
+        </div>
+        <ul class="setting">
+          <a href="" class="lang">
+            <span>English</span>
+            <i class="bi bi-globe2"></i>
+          </a>
+          <button class="copyUrl search">
+            <i class="fa-regular fa-clone"></i>
+            <input readonly class="form-control" type="text" name="" id="" placeholder="" value="scheddo.com/jonathan">
+          </button>
+          <li id="notif" class="has-menu auth">
+            <a role="button" class="option-link">
+              <i class="bi bi-bell"></i>
+            </a>
+            <div class="sub-menu">
+              <div class="notifi-wrapper">
+                <div class="notifi new">
+                  <a class="link" href="notifi.html"></a>
+                  <span class="dot"></span>
+                  <div class="notifi-img">
+                    <img src="../../images/viens.svg" alt="">
+                  </div>
+                  <p class="cut-text">
+                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                    النصوص النهائية
+                  </p>
+                  <p class="date mb-0">22/01/2022</p>
+                </div>
+                <div class="notifi">
+                  <a class="link" href="notifi.html"></a>
+                  <span class="dot"></span>
+                  <div class="notifi-img">
+                    <img src="../../images/viens.svg" alt="">
+                  </div>
+                  <p class="cut-text">
+                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع
+                    النصوص النهائية
+                  </p>
+                  <p class="date mb-0">22/01/2022</p>
+                </div>
+              </div>
+            </div>
+            <span class="count">1</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <main>
+    <aside class="nav-dash">
+      <ul>
+        <li class="nav-item">
+          <div class="nav-link navbar-brand">
+            <img src="../../images/v.svg" alt="">
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="bi bi-grid-fill"></i>
+            <span>الرئيسية</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="applicants.html" class="nav-link active">
+            <i class="bi bi-file-bar-graph"></i>
+            <span>المتقدمين</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="addProgram.html" class="nav-link">
+            <i class="bi bi-card-list"></i>
+            <span>إضافة برنامج</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="programs.html" class="nav-link">
+            <i class="bi bi-briefcase"></i>
+            <span>البرامج</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="profile.html" class="nav-link">
+            <i class="bi bi-people"></i>
+            <span>الملف الشخصي</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="setting.html" class="nav-link">
+            <i class="bi bi-gear"></i>
+            <span>الإعدادات</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link exit">
+            <i class="bi bi-box-arrow-left"></i>
+            <span>تسجيل الخروج</span>
+          </button>
+        </li>
+      </ul>
+    </aside>
+    <aside class="data-dash">
+      <div class="Applicants">
+        <div class="card">
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="Applicant-img">
+                  <img src="../../images/wesam.jpg" alt="">
+                </div>
+                <h5>عبد الله السيد</h5>
+                <p>مطور ويب</p>
+                <div class="">
+                  <button class="main-btn w-100">
+                    <span>قبول</span>
+                  </button>
+                  <button class="gray-btn w-100">
+                    <span>رفض</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-10">
+                <div class="wizard card-like">
+                  <form action="#">
+                    <div class="wizard-header">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <ul class="nav nav-tabs steps" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="CV-tab" data-bs-toggle="tab"
+                                data-bs-target="#CV-tab-pane" type="button" role="tab" aria-controls="CV-tab-pane"
+                                aria-selected="true">
+                                السيرة الذاتية
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">
+                                البيانات الشخصية
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="passport-tab" data-bs-toggle="tab"
+                                data-bs-target="#passport-tab-pane" type="button" role="tab"
+                                aria-controls="passport-tab-pane" aria-selected="false">
+                                بيانات جواز السفر
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="experiance-tab" data-bs-toggle="tab"
+                                data-bs-target="#experiance-tab-pane" type="button" role="tab"
+                                aria-controls="experiance-tab-pane" aria-selected="false">
+                                الخبرات العلمية
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="qualification-tab" data-bs-toggle="tab"
+                                data-bs-target="#qualification-tab-pane" type="button" role="tab"
+                                aria-controls="qualification-tab-pane" aria-selected="false">
+                                المؤهلات العلمية
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="attachment-tab" data-bs-toggle="tab"
+                                data-bs-target="#attachment-tab-pane" type="button" role="tab"
+                                aria-controls="attachment-tab-pane" aria-selected="false">
+                                المستندات
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="demoVid-tab" data-bs-toggle="tab"
+                                data-bs-target="#demoVid-tab-pane" type="button" role="tab"
+                                aria-controls="demoVid-tab-pane" aria-selected="false">
+                                الفيديو التعريفي
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="CV-tab-pane" role="tabpanel" aria-labelledby="CV-tab" tabindex="0">
+                        <div class="step">
+                          <div class="CV">
+                            <img src="../../images/cv.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="step">
+                          <div class="row gy-3">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="firstname">الإسم الأول باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="firstname">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="firstnameEn">الإسم الأول باللغة الانجليزية</label>
+                                <input readonly type="text" class="form-control" id="firstnameEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="dadname">اسم الاب باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="dadname">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="dadnameEn">اسم الاب باللغة الانجليزية</label>
+                                <input readonly type="text" class="form-control" id="dadnameEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="grandname">اسم الجد باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="grandname">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="grandnameEn">اسم الجد باللغة الانجليزية</label>
+                                <input readonly type="text" class="form-control" id="grandnameEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="lastname">الإسم الأخير باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="lastname">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="lastnameEn">الإسم الأخير باللغة الإنجليزية</label>
+                                <input readonly type="text" class="form-control" id="lastnameEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="email">البريد الإلكتروني</label>
+                                <input readonly type="email" class="form-control" id="email">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="BYD">تاريخ الميلاد</label>
+                                <input readonly type="date" class="form-control" id="BYD">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="BYD_Country">دولة الميلاد</label>
+                                <select class="form-control form-select" id="BYD_Country">
+                                  <option value=""></option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="BYD_City">مدينة الميلاد</label>
+                                <select class="form-control form-select" id="BYD_City">
+                                  <option value=""></option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="nationality">الجنسية</label>
+                                <input readonly type="date" class="form-control" id="nationality">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="sex">الجنس</label>
+                                <select class="form-control form-select" id="sex">
+                                  <option value="">ذكر</option>
+                                  <option value="">انثى</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="form-group">
+                                <label class="form-label" for="NativeLang">اللغة الأم</label>
+                                <select class="form-control form-select" id="NativeLang">
+                                  <option value="">العربية</option>
+                                  <option value="">الانجليزية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="jobTitle">المسمى الوظيفي باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="jobTitle">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="jobTitleEn">المسمى الوظيفي باللغة الإنجليزية</label>
+                                <input readonly type="text" class="form-control" id="jobTitleEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="description">نبذة بسيطة باللغة العربية</label>
+                                <textarea type="text" class="form-control" id="description">
+                                                  </textarea>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="descriptionEn">نبذة بسيطة باللغة الانجليزية</label>
+                                <textarea type="text" class="form-control" id="descriptionEn">
+                                                  </textarea>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="address">العنوان الوطني باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="address">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="addressEn"> العنوان الوطني باللغة الإنجليزية</label>
+                                <input readonly type="text" class="form-control" id="addressEn">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="passport-tab-pane" role="tabpanel" aria-labelledby="passport-tab" tabindex="0">
+                        <div class="step">
+                          <div class="row gy-3">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passport">جواز سفر، هوية، إقامة ؟</label>
+                                <select class="form-control form-select" id="passport">
+                                  <option value="">هوية</option>
+                                  <option value="">اقامة</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportNum">رقم جواز السفر</label>
+                                <input readonly type="number" class="form-control" id="passportNum">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportName">الإسم كما في جواز السفر باللغة
+                                  العربية</label>
+                                <input readonly type="text" class="form-control" id="passportName">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportNameEn">الإسم كما في جواز السفر باللغة
+                                  الانجليزية</label>
+                                <input readonly type="text" class="form-control" id="passportNameEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportCity">مدينة جواز السفر</label>
+                                <select class="form-control form-select" id="passportCity">
+                                  <option value="">القاهرة</option>
+                                  <option value="">اسكندرية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportCountry">دولة إصدار جواز السفر</label>
+                                <select class="form-control form-select" id="passportCountry">
+                                  <option value="">مصر</option>
+                                  <option value="">السعودية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportCD">تاريخ إنشاء جواز السفر</label>
+                                <input readonly type="date" class="form-control" id="passportNameCD">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="passportEXD">تاريخ انتهاء جواز السفر</label>
+                                <input readonly type="date" class="form-control" id="passportNameEXD">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="experiance-tab-pane" role="tabpanel" aria-labelledby="experiance-tab" tabindex="0">
+                        <div class="step">
+                          <div class="experiance">
+                            <div class="date">
+                              <div>21-2-2021</div>
+                              <div>حتى الآن</div>
+                            </div>
+                            <div class="experiance-title">
+                              <h5>اسم الشركة يكتب هنا</h5>
+                              <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                            </div>
+                            <div class="exp-decription">
+                              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+                                محتوى نصي، هنا يوجد محتوى نصي</p>
+                            </div>
+                          </div>
+                          <div class="experiance">
+                            <div class="date">
+                              <div>21-2-2021</div>
+                              <div>حتى الآن</div>
+                            </div>
+                            <div class="experiance-title">
+                              <h5>اسم الشركة يكتب هنا</h5>
+                              <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                            </div>
+                            <div class="exp-decription">
+                              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+                                محتوى نصي، هنا يوجد محتوى نصي</p>
+                            </div>
+                          </div>
+                          <div class="experiance">
+                            <div class="date">
+                              <div>21-2-2021</div>
+                              <div>حتى الآن</div>
+                            </div>
+                            <div class="experiance-title">
+                              <h5>اسم الشركة يكتب هنا</h5>
+                              <p class="jobTitle">المسمى الوظيفي يكتب هنا</p>
+                            </div>
+                            <div class="exp-decription">
+                              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                                لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+                                محتوى نصي، هنا يوجد محتوى نصي</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="qualification-tab-pane" role="tabpanel" aria-labelledby="qualification-tab" tabindex="0">
+                        <div class="step">
+                          <div class="row gy-3">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalName">الجهة التعليمية باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="EducationalName">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalNameEn">الجهة التعليمية باللغة
+                                  الإنجليزية</label>
+                                <input readonly type="text" class="form-control" id="EducationalNameEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="Specialization">التخصص باللغة العربية</label>
+                                <input readonly type="text" class="form-control" id="Specialization">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="SpecializationEn">التخصص باللغة الإنجليزية</label>
+                                <input readonly type="text" class="form-control" id="SpecializationEn">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="Degree">الدرجة العلمية</label>
+                                <input readonly type="text" class="form-control" id="Degree">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="GradDate">تاريخ التخرج</label>
+                                <input readonly type="date" class="form-control" id="GradDate">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalDesc">نبذة بسيطة باللغة العربية</label>
+                                <textarea type="text" class="form-control" id="EducationalDesc">
+                                                  </textarea>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalDescEn">نبذة بسيطة باللغة الانجليزية</label>
+                                <textarea type="text" class="form-control" id="EducationalDescEn">
+                                </textarea>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalCountry">دولة الشهادة</label>
+                                <select class="form-control form-select" id="EducationalCountry">
+                                  <option value="">مصر</option>
+                                  <option value="">السعودية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalCity">مدينة المنظمة</label>
+                                <select class="form-control form-select" id="EducationalCity">
+                                  <option value="">القاهرة</option>
+                                  <option value="">اسكندرية</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalCD">بداية الدراسة</label>
+                                <input readonly type="date" class="form-control" id="EducationaCD">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label class="form-label" for="EducationalLevel">المستوى الدراسي</label>
+                                <input readonly type="text" class="form-control" id="EducationalLevel">
+                              </div>
+                            </div>
+                          </div>
+                          <button class="main-btn w-auto px-5 py-1 mt-5" data-bs-target="#QualificationsModal"
+                            data-bs-toggle="modal">
+                            <i class="bi bi-plus fs-4"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="attachment-tab-pane" role="tabpanel" aria-labelledby="attachment-tab" tabindex="0">
+                        <div class="step">
+                          <div class="row gy-3">
+                            <div class="col-lg-12">
+                              <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد
+                                JPG</label>
+                              <div class="file-input form-control">
+                                <input readonly type="file" id="" accept=".jpg">
+                                <span class="button">
+                                  <i class="bi bi-paperclip"></i>
+                                </span>
+                                <span class="label" data-js-label="">
+                                  قم بالشد والإفلات أو حمل الصورة من جهازك
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد
+                                JPG</label>
+                              <div class="file-input form-control">
+                                <input readonly type="file" id="" accept=".jpg">
+                                <span class="button">
+                                  <i class="bi bi-paperclip"></i>
+                                </span>
+                                <span class="label" data-js-label="">
+                                  قم بالشد والإفلات أو حمل الصورة من جهازك
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد
+                                JPG</label>
+                              <div class="file-input form-control">
+                                <input readonly type="file" id="" accept=".jpg">
+                                <span class="button">
+                                  <i class="bi bi-paperclip"></i>
+                                </span>
+                                <span class="label" data-js-label="">
+                                  قم بالشد والإفلات أو حمل الصورة من جهازك
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <label for="" class="col-form-label">صورة شخصية خلفية بيضاء. يرجى رفع صورة واضحة امتداد
+                                JPG</label>
+                              <div class="file-input form-control">
+                                <input readonly type="file" id="" accept=".jpg">
+                                <span class="button">
+                                  <i class="bi bi-paperclip"></i>
+                                </span>
+                                <span class="label" data-js-label="">
+                                  قم بالشد والإفلات أو حمل الصورة من جهازك
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="demoVid-tab-pane" role="tabpanel" aria-labelledby="demoVid-tab" tabindex="0">
+                        <div class="step">
+                          <div class="header-video">
+                            <div class="video-wrap h-100">
+                              <img src="images/header.png" alt="" class="video-cover-img" class="w-100">
+                              <video class="video" width="100%" height="100%">
+                                <source src="../../images/vid.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                            <div class="play-icon">
+                              <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="pause-icon d-none">
+                              <i class="fa-solid fa-pause"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- showServModal -->
+  <div class="modal fade" id="showServModal" tabindex="-1" aria-labelledby="showServModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5>اسم الخدمة</h5>
+          <img src="images/img.svg" alt="">
+          <div class="d-flex align-items-center mt-4 justify-content-center" style="gap:10px">
+            <button class="main-btn dark rounded-3">الحصول على الخدمة</button>
+            <button class="circle-btn dark">
+              <i class="fa-solid fa-share"></i>
+            </button>
+            <a href="tel:5899" class="circle-btn dark">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="../../js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+  <!-- fancyBox script -->
+  <script src="../../js/jquery.fancybox.min.js"></script>
+  <!-- JS Coded -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- wow script -->
+  <script src="../../js/wow.min.js"></script>
+  <!-- nice-select -->
+  <script src="../../js/jquery.nice-select.min.js"></script>
+  <!-- owl carousel script -->
+  <script src="../../js/owl.carousel.min.js"></script>
+  <!-- rateYo -->
+  <script src="../../js/jquery.rateyo.min.js"></script>
+  <!-- JS Coded -->
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

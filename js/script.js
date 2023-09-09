@@ -59,6 +59,30 @@ $(document).ready(function () {
     );
   }
 
+  // copy URL
+  function copyUrl() {
+    // Get the text field
+    var copyText = document.querySelector(".copyUrl input");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+
+  }
+  $('.copyUrl').click(copyUrl)
+
+
+  // toggle nav
+  $('.toggle-nav-btn').click(function(){
+    console.log('89989');
+    $('.toggle-nav-btn i').toggleClass('fa-bars fa-xmark');
+    $('.nav-dash').toggleClass('nav-toggle');
+  })
+
+
 
   // Get all sections that have an ID defined
   const sections = document.querySelectorAll(".edu-content div[id]");
@@ -252,7 +276,7 @@ $(document).ready(function () {
   })
 
   // change profile pic
-  if ($(".profile").length > 0) {
+  if ($(".profile-pic").length > 0) {
     const imgDiv = document.querySelector('.profile-pic');
     const img = document.querySelector('#photo');
     const file = document.querySelector('#file');
@@ -315,12 +339,18 @@ $(document).ready(function () {
   function userType() {
     var selectedType = $('#userType :selected').val();
     if (selectedType == 'educational'){
+      $('.askToJoin .btn-main').attr('href','dashboard/educational/index.html')
       $('#op-university').show();
       $('#op-phone').hide();
     }
     else{
       $('#op-university').hide();
       $('#op-phone').show();
+      if (selectedType == 'company'){
+        $('.askToJoin .btn-main').attr('href','dashboard/company/index.html')
+      }
+      else 
+      $('.askToJoin .btn-main').attr('href','dashboard/agent/index.html')
     }
   }
   userType()
