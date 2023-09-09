@@ -1162,9 +1162,6 @@ main {
 } */
 
 
-
-
-
 .status-nav {
   margin-bottom: 1.25rem;
 }
@@ -1585,7 +1582,6 @@ main {
   main aside.nav-dash {
     transform: translateX(100%);
   }
-
   .toggle-nav-btn {
     width: 45px;
     height: 45px;
@@ -1595,17 +1591,16 @@ main {
     background: transparent;
     border-radius: 5px 0 0 5px;
     color: #000;
-    font-size: 24px;
+    font-size: 30px;
     /* transform: translateX(-100%); */
     /* box-shadow: 0px 2px 6px #0000000A; */
   }
-
   main .nav-dash.nav-toggle:not(:last-child) {
     transform: translateX(0);
   }
-  /* .data-dash {
+  .data-dash {
     padding: 3.5rem var(--gutter);
-  } */
+  }
   .serv-info {
     justify-content: flex-start;
   }
