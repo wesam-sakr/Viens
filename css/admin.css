@@ -660,6 +660,9 @@ section {
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar .option .setting .count {
@@ -825,6 +828,8 @@ main {
 .statistics .card {
   margin-bottom: .5rem;
   margin-top: 1rem;
+  transition: .3s;
+  /* z-index: 9; */
 }
 
 .statistics .card::after {
@@ -887,11 +892,18 @@ main {
   margin: 1.2rem 0;
 }
 
+.statistics .card-body {
+  border-radius: 20px;
+  background: var(--white);
+}
 .statistics .card-body .count {
   font-weight: 900;
   font-size: 30px;
 }
 
+.statistics .card:hover{
+  transform: translateY(-10px);
+}
 .statistics .card:hover .box-icon {
   transform: rotate(45deg);
 }
@@ -944,7 +956,7 @@ main {
   padding: 2.5rem 2rem;
 }
 .Applicants .CV img{
-  width: 400px;
+  max-width: 400px;
   border-radius: 20px;
 
 }
@@ -1598,8 +1610,22 @@ main {
   main .nav-dash.nav-toggle:not(:last-child) {
     transform: translateX(0);
   }
+  .navbar .option .lang, .navbar .option .auth {
+    font-size: 14px;
+  }
   .data-dash {
     padding: 3.5rem var(--gutter);
+  }
+  .data-dash .filter{
+    padding: 1rem ;
+  }
+  .data-dash .filter , .data-dash .filter .d-flex {
+    flex-direction: column;
+  }
+  .Applicants table td .btn{
+    width: 80px;
+    margin-bottom: .3rem;
+    padding: 0 !important;
   }
   .serv-info {
     justify-content: flex-start;

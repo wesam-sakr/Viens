@@ -1054,6 +1054,12 @@ section {
   .contact-data :first-child .contact-info{
     border-top-right-radius: 40px ;
   }
+  .comments-wrapper{
+    width: 85%;
+  }
+  .your-comment{
+    width: 50%;
+  }
   
   .contact-data :last-child .contact-info{
     border-top-left-radius: 40px ;
@@ -1589,6 +1595,10 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
+.edu-programs .main-btn{
+  background: var(--second-color);
+  border-color: inherit;
+}
 
 
 .edu-programs.single{
@@ -1603,6 +1613,18 @@ section {
 }
 .edu-programs.single .edu-img{
   width: 40%;
+}
+
+#uniPrograms .edu-footer {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+}
+#uniPrograms  .edu-link {
+  color: var(--second-color);
+  border: 1px solid var(--second-color);
+  font-size: 20px;
+  line-height: 1;
 }
 
 /*  */

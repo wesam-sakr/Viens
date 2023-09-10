@@ -145,11 +145,17 @@
                         <span>الإعدادات</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <button class="nav-link exit">
-                        <i class="bi bi-box-arrow-left"></i>
-                        <span>تسجيل الخروج</span>
-                    </button>
+                <li  class="nav-item">
+                    <a href="receipts.html" class="nav-link active">
+                      <i class="bi bi-receipt"></i>
+                      <span>الفواتير</span>
+                    </a>
+                  </li>
+                  <li  class="nav-item">
+                    <a href="../../askToJion.html" class="nav-link exit">
+                      <i class="bi bi-box-arrow-left"></i>
+                      <span>تسجيل الخروج</span>
+                    </a>
                 </li>
             </ul>
         </aside>
@@ -159,7 +165,7 @@
             </div>
             <div class="profile">
                 <div class="step">
-                    <div class="row gy-3">
+                    <div id="serv-wrapper" class="row gy-3">
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label" >اسم الطالب</label>
@@ -169,6 +175,13 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label">البريد الإلكتروني
+                                </label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label"> رقم الجوال
                                 </label>
                                 <input type="email" class="form-control">
                             </div>
@@ -192,53 +205,67 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 
+                        #addServ
+                        script at end of gage
+                        display none in case show receipt
+                     -->
+                    <button id="addServ" class="main-btn w-auto px-5 py-1 mt-5">
+                        <i class="bi bi-plus fs-4"></i>
+                    </button>
+
                     <button class="second-btn col-lg-4 m-auto px-5 mt-5">
                         ارسال العرض
                     </button>
                 </div>
             </div>
         </aside>
-    </main>
-
-    <!-- showServModal -->
-    <div class="modal fade" id="showServModal" tabindex="-1" aria-labelledby="showServModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h5>اسم الخدمة</h5>
-                    <img src="images/img.svg" alt="">
-                    <div class="d-flex align-items-center mt-4 justify-content-center" style="gap:10px">
-                        <button class="main-btn dark rounded-3">الحصول على الخدمة</button>
-                        <button class="circle-btn dark">
-                            <i class="fa-solid fa-share"></i>
-                        </button>
-                        <a href="tel:5899" class="circle-btn dark">
-                            <i class="fa-solid fa-phone"></i>
-                        </a>
+        </main>
+    
+        <!-- jquery -->
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <!-- fancyBox script -->
+        <script src="../../js/jquery.fancybox.min.js"></script>
+        <!-- JS Coded -->
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- wow script -->
+        <script src="../../js/wow.min.js"></script>
+        <!-- nice-select -->
+        <script src="../../js/jquery.nice-select.min.js"></script>
+        <!-- owl carousel script -->
+        <script src="../../js/owl.carousel.min.js"></script>
+        <!-- rateYo -->
+        <script src="../../js/jquery.rateyo.min.js"></script>
+        <!-- JS Coded -->
+        <script src="../../js/script.js"></script>
+        <script>
+            $('#addServ').click(function(){
+                console.log('ghjjljlkjkj');
+                $('#serv-wrapper').append(`
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">اسم الخدمة</label>
+                            <input type="text" class="form-control">
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jquery -->
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../../js/bootstrap.bundle.min.js"></script>
-    <!-- fancyBox script -->
-    <script src="../../js/jquery.fancybox.min.js"></script>
-    <!-- JS Coded -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- wow script -->
-    <script src="../../js/wow.min.js"></script>
-    <!-- nice-select -->
-    <script src="../../js/jquery.nice-select.min.js"></script>
-    <!-- owl carousel script -->
-    <script src="../../js/owl.carousel.min.js"></script>
-    <!-- rateYo -->
-    <script src="../../js/jquery.rateyo.min.js"></script>
-    <!-- JS Coded -->
-    <script src="../../js/script.js"></script>
-</body>
-
-</html>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">سعر الخدمة</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">الخصم</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                `)
+            })
+        </script>
+      </body>
+    </html>
+    
