@@ -169,43 +169,54 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label" >اسم الطالب</label>
-                                <input type="text" class="form-control" value="يكتب هنا">
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label">البريد الإلكتروني
                                 </label>
-                                <input type="email" class="form-control" value="يكتب هنا">
+                                <input type="email" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label"> رقم الجوال
                                 </label>
-                                <input type="email" class="form-control" value="يكتب هنا">
+                                <input type="email" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label">اسم الخدمة</label>
-                                <input type="text" class="form-control" value="يكتب هنا">
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label">سعر الخدمة</label>
-                                <input type="text" class="form-control" value="يكتب هنا">
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="form-group">
                                 <label class="form-label">الخصم</label>
-                                <input type="text" class="form-control" value="يكتب هنا">
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- 
+                        #addServ
+                        script at end of gage
+                        display none in case show receipt
+                     -->
+                    <button id="addServ" class="main-btn w-auto px-5 py-1 mt-5">
+                        <i class="bi bi-plus fs-4"></i>
+                    </button>
+
+                    <button class="second-btn col-lg-4 m-auto px-5 mt-5">
+                        ارسال العرض
+                    </button>
                 </div>
             </div>
         </aside>
@@ -230,6 +241,31 @@
         <script src="../../js/jquery.rateyo.min.js"></script>
         <!-- JS Coded -->
         <script src="../../js/script.js"></script>
+        <script>
+            $('#addServ').click(function(){
+                console.log('ghjjljlkjkj');
+                $('#serv-wrapper').append(`
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">اسم الخدمة</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">سعر الخدمة</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">الخصم</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                `)
+            })
+        </script>
       </body>
     </html>
     

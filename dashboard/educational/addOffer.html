@@ -119,15 +119,15 @@
             </a>
           </li> 
           <li  class="nav-item">
-            <a href="addStd.html" class="nav-link">
+            <a href="addProgram.html" class="nav-link">
               <i class="bi bi-card-list"></i>
-              <span>إضافة طالب</span>
+              <span>إضافة برنامج</span>
             </a>
           </li>
           <li  class="nav-item">
-            <a href="students.html" class="nav-link">
+            <a href="programs.html" class="nav-link">
               <i class="bi bi-briefcase"></i>
-              <span>الطلاب</span>
+              <span>البرامج</span>
             </a>
           </li>
           <li  class="nav-item">
@@ -157,151 +157,66 @@
         </ul>
       </aside>
       <aside class="data-dash">
-        <div class="statistics">
-          <div class="h_title">
-            <h5 class="title">
-              احصائيات سريعة
-            </h5>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="box-icon">
-                    <i class="bi bi-emoji-smile"></i>
-                  </div>
-                  <h6>جميع الفواتير</h6>
-                  <p class="count mb-0">28,345</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card c_second">
-                <div class="card-body">
-                  <div class="box-icon">
-                    <i class="bi bi-emoji-smile"></i>
-                  </div>
-                  <h6>فواتير جديدة</h6>
-                  <p class="count mb-0">28,345</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card c_lblue">
-                <div class="card-body">
-                  <div class="box-icon">
-                    <i class="bi bi-award"></i>
-                  </div>
-                  <h6>جميع المتقدمين</h6>
-                  <p class="count mb-0">28,345</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card c_lpurple">
-                <div class="card-body">
-                  <div class="box-icon">
-                    <i class="fa-regular fa-thumbs-up"></i>
-                  </div>
-                  <h6>عدد المتابعين</h6>
-                  <p class="count mb-0">28,345</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="h_title">
+            <h5 class="title">تقديم عرض</h5>
         </div>
+        <div class="profile">
+            <div class="step">
+                <div id="serv-wrapper" class="row gy-3">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label" >اسم الطالب</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">البريد الإلكتروني
+                            </label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label"> رقم الجوال
+                            </label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">اسم الخدمة</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">سعر الخدمة</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="form-label">الخصم</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                    #addServ
+                    script at end of gage
+                    display none in case show receipt
+                 -->
+                <button id="addServ" class="main-btn w-auto px-5 py-1 mt-5">
+                    <i class="bi bi-plus fs-4"></i>
+                </button>
 
-        <div class="receipt mt-5">
-            <div class="h_title">
-              <h5 class="title">احصائيات مالية</h5>
-              <a href="addOffer.html" class="second-btn px-5">
-                <span>إضافة فاتورة</span>
-              </a>
-            </div>
-            <div class="table-responsive">
-              <table class="table m-0">
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="Applicant-img">
-                        <img src="../../images/wesam.jpg" alt="">
-                      </div>
-                    </td>
-                    <td>عبد الله السيد</td>
-                    <td>#14525</td>
-                    <td>
-                      برنامج الهندسة
-                    </td>
-                    <td>25/5/2023</td>
-                    <td>في انتظار الدفع</td>
-                    <td>
-                      <a href="receipt-details.html" class="receipt-details-btn">
-                        تفاصيل الفاتورة
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="Applicant-img">
-                        <img src="../../images/wesam.jpg" alt="">
-                      </div>
-                    </td>
-                    <td>عبد الله السيد</td>
-                    <td>#14525</td>
-                    <td>
-                      برنامج الهندسة
-                    </td>
-                    <td>25/5/2023</td>
-                    <td>في انتظار الدفع</td>
-                    <td>
-                      <a href="receipt-details.html" class="receipt-details-btn">
-                        تفاصيل الفاتورة
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="Applicant-img">
-                        <img src="../../images/wesam.jpg" alt="">
-                      </div>
-                    </td>
-                    <td>عبد الله السيد</td>
-                    <td>#14525</td>
-                    <td>
-                      برنامج الهندسة
-                    </td>
-                    <td>25/5/2023</td>
-                    <td>في انتظار الدفع</td>
-                    <td>
-                      <a href="receipt-details.html" class="receipt-details-btn">
-                        تفاصيل الفاتورة
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="Applicant-img">
-                        <img src="../../images/wesam.jpg" alt="">
-                      </div>
-                    </td>
-                    <td>عبد الله السيد</td>
-                    <td>#14525</td>
-                    <td>
-                      برنامج الهندسة
-                    </td>
-                    <td>25/5/2023</td>
-                    <td>في انتظار الدفع</td>
-                    <td>
-                      <a href="receipt-details.html" class="receipt-details-btn">
-                        تفاصيل الفاتورة
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <button class="second-btn col-lg-4 m-auto px-5 mt-5">
+                    ارسال العرض
+                </button>
             </div>
         </div>
-      </aside>
+    </aside>
     </main>
 
     <!-- jquery -->
@@ -323,5 +238,30 @@
     <script src="../../js/jquery.rateyo.min.js"></script>
     <!-- JS Coded -->
     <script src="../../js/script.js"></script>
+    <script>
+        $('#addServ').click(function(){
+            console.log('ghjjljlkjkj');
+            $('#serv-wrapper').append(`
+                <div class="col-lg-4 col-sm-6">
+                    <div class="form-group">
+                        <label class="form-label">اسم الخدمة</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="form-group">
+                        <label class="form-label">سعر الخدمة</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="form-group">
+                        <label class="form-label">الخصم</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            `)
+        })
+    </script>
   </body>
 </html>
