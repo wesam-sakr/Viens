@@ -1161,6 +1161,7 @@ main {
   font-size: small;
   font-weight: bold;
   color: #000;
+  white-space: nowrap;
 }
 
 
